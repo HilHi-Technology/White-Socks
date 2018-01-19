@@ -1,1 +1,7 @@
-Adam
+//Update GitHub
+git add .
+git commit -m "Describe change"
+git push
+
+//Update Computer
+git pull
