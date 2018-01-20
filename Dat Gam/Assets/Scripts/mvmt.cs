@@ -4,25 +4,26 @@ using UnityEngine;
 
 public class mvmt : MonoBehaviour {
 
-    float speed = 1.0f;
+    public float moveSpeed;
     float x = 0;
     float y = 0;
-    Animator animator;
 
-    void Start()
+    Rigidbody2D RB;
+    Animator anim;
+
+    void Awake()
     {
-        animator = GetComponent<Animator>();
-    }
+        RB = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();}
 
     void Update()
     {
-        x = Input.GetAxis("Horizontal");
+        x = Input.GetAxis("Horizontal");        //Get user inputs
         y = Input.GetAxis("Vertical");
 
-        animator.SetFloat("Move_Hor", x);
-        animator.SetFloat("Move_Ver", y);
+        anim.SetFloat("Move_Hor", x);           //Update animations
+        anim.SetFloat("Move_Ver", y);
 
-        var move = new Vector3(x, y, 0);
-        transform.position += move * speed * Time.deltaTime;
+        RB.velocity = new Vector2(x, y);        //Move
     }
 }
