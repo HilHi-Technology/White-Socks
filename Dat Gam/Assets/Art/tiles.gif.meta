@@ -1,10 +1,11 @@
 fileFormatVersion: 2
 guid: 54a885cdb81a92846a5a52b052066dec
-timeCreated: 1516483769
+timeCreated: 1516928897
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: wall_concrete
+    21300000: tiles_0
+    21300002: wall
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -32,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -1
     wrapU: 1
@@ -46,11 +47,11 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spriteBorder: {x: 84, y: 5, z: 24, w: 103}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 16
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: 0
+  spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
   maxTextureSizeSet: 0
@@ -81,7 +82,21 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wall_concrete
+      name: tiles_0
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 26
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: wall
       rect:
         serializedVersion: 2
         x: 84
@@ -99,15 +114,11 @@ TextureImporter:
       - {x: -62, y: -62}
       - {x: 62, y: -62}
       - {x: 62, y: 62}
-    physicsShape:
-    - - {x: -62, y: 62}
-      - {x: -62, y: -62}
-      - {x: 62, y: -62}
-      - {x: 62, y: 62}
-    - - {x: 22, y: -57}
-      - {x: 22, y: -41}
-      - {x: 38, y: -41}
-      - {x: 38, y: -57}
+    - - {x: 22.032013, y: -56.61579}
+      - {x: 22.032013, y: -40.97386}
+      - {x: 37.79808, y: -40.97386}
+      - {x: 37.79808, y: -56.61579}
+    physicsShape: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

@@ -8,22 +8,43 @@ public class mvmt : MonoBehaviour {
     float x = 0;
     float y = 0;
 
-    Rigidbody2D RB;
+
     Animator anim;
+    Rigidbody2D rb;
 
     void Awake()
     {
-        RB = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();}
+        rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+    }
 
     void Update()
     {
         x = Input.GetAxis("Horizontal");        //Get user inputs
         y = Input.GetAxis("Vertical");
 
-        anim.SetFloat("Move_Hor", x);           //Update animations
-        anim.SetFloat("Move_Ver", y);
+        if (x != 0 || y != 0)                   //Update Animation
+        {
+            anim.speed = 1;
+            
+            anim.SetFloat("Move_Ver", y);
+            anim.SetFloat("Move_Hor", x);
 
-        RB.velocity = new Vector2(x, y);        //Move
+            if (y != 0)
+            {
+                anim.SetBool("Ver?", true);
+            }
+            else
+            {
+                anim.SetBool("Ver?", false);
+            }
+        }
+        else
+        {
+            anim.Play(0);
+            anim.speed = 0;
+        }
+
+        rb.velocity = new Vector2(x, y);        //Move
     }
 }
