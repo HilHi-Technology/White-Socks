@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4005851799828212}
   - component: {fileID: 212217755461957900}
   - component: {fileID: 61348040374958682}
+  - component: {fileID: 95428862837135514}
+  - component: {fileID: 114862602347229492}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -66,6 +68,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &95428862837135514
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1623708411441492}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 191fe6a2c19f93f4c9c5a9f338561571, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114862602347229492
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1623708411441492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212217755461957900
 SpriteRenderer:
   m_ObjectHideFlags: 1

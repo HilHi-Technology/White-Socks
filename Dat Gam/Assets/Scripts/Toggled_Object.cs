@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Activated_Wall : MonoBehaviour {
+public class Toggled_Object : MonoBehaviour {
 
     public int active;
 
@@ -19,12 +19,8 @@ public class Activated_Wall : MonoBehaviour {
 	void Update ()
     {
         active = Lever.instance.pressed;
-
-
-
-        anim.SetInteger("Dreaming", active);
-
-
+ 
+        anim.SetInteger("Toggled", active);
 
         if (mvmt.instance.dreaming)
         {

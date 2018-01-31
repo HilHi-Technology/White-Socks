@@ -4,13 +4,27 @@ using UnityEngine;
 
 public class Bed : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+    bool e;
+    bool touching;
+
+	void Start ()
+    {
+
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        touching = true;
+    }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        touching = false;
+    }
+
+    void Update ()
+    {
+		if (Input.GetKeyDown("e")) { e = true; } else { e = false; }
+
+        if (touching && e) { mvmt.instance.dreaming = true; }
 	}
 }

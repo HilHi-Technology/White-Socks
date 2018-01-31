@@ -285,11 +285,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Activated_Wall.cs" />
     <Compile Include="Assets\Scripts\Bed.cs" />
     <Compile Include="Assets\Scripts\Door_Unlocked.cs" />
     <Compile Include="Assets\Scripts\Lever.cs" />
     <Compile Include="Assets\Scripts\mvmt.cs" />
+    <Compile Include="Assets\Scripts\Toggled_Object.cs" />
+    <Compile Include="Assets\Scripts\Wall.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

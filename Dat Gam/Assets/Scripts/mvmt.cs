@@ -25,7 +25,7 @@ public class mvmt : MonoBehaviour {
         instance = this;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+  /*  void OnTriggerEnter2D(Collider2D other)
     {
         touchingBed = true;
     }
@@ -33,15 +33,15 @@ public class mvmt : MonoBehaviour {
     {
         touchingBed = false;
     }
-
+    */
     void Update()
     {
         x = Input.GetAxis("Horizontal");        //Get user inputs
         y = Input.GetAxis("Vertical");
-        if (Input.GetKeyDown("e")){ e = true; } else{ e = false; }
+ //       if (Input.GetKeyDown("e")){ e = true; } else{ e = false; }
         if (Input.GetKeyDown("q")) { q = true; } else { q = false; }
 
-        if (touchingBed && e){ dreaming = true; }
+//        if (touchingBed && e){ dreaming = true; }
         if (dreaming && q) { dreaming = false; }
 
         if (x != 0 || y != 0)                   //Update Animation
