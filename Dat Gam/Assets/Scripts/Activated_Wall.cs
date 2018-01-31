@@ -8,6 +8,7 @@ public class Activated_Wall : MonoBehaviour {
 
     Animator anim;
     BoxCollider2D coll;
+
 	void Start ()
     {
         anim = GetComponent<Animator>();
@@ -19,15 +20,26 @@ public class Activated_Wall : MonoBehaviour {
     {
         active = Lever.instance.pressed;
 
+
+
         anim.SetInteger("Dreaming", active);
 
-        if (active < 0)
+
+
+        if (mvmt.instance.dreaming)
         {
-          coll.enabled = true;
+            coll.enabled = false;
         }
         else
         {
-            coll.enabled = false;
+            if (active > 0)
+            {
+              coll.enabled = false;
+            }
+            else
+            {
+                coll.enabled = true;
+            }
         }
     }
 }

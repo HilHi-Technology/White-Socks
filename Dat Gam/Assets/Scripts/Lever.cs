@@ -31,14 +31,7 @@ public class Lever : MonoBehaviour {
 
 	void Update ()
     {
-        if (Input.GetKeyDown("e"))
-        {
-            e = true;
-        }
-        else
-        {
-            e = false;
-        }
+        if (Input.GetKeyDown("e")){ e = true; } else{ e = false;  }
 
         if (touching && e)
         {
