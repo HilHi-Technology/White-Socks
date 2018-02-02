@@ -1,1 +1,10 @@
-Tiana is a horrible person, and a semi-decent artist
+how to set up folders and upload files from the website
+"create new file"
+name file
+type "/" after file name
+name new file (this is a dummy. folders cannot exist without content)
+open new folder
+"create new file"
+drag+drop files from computer into space provided
+commit changes
+I don't know if this will be useful to anyone other than me but it's just here to remind me so I dont have to go hunting for reddit threads in the middle of the night.
