@@ -25,6 +25,6 @@ public class Bed : MonoBehaviour {
     {
 		if (Input.GetKeyDown("e")) { e = true; } else { e = false; }
 
-        if (touching && e) { mvmt.instance.dreaming = true; }
+        if (touching && e) { Mvmt.instance.dreaming = true; }
 	}
 }

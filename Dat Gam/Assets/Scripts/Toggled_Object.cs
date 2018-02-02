@@ -22,7 +22,7 @@ public class Toggled_Object : MonoBehaviour {
  
         anim.SetInteger("Toggled", active);
 
-        if (mvmt.instance.dreaming)
+        if (Mvmt.instance.dreaming)
         {
             coll.enabled = false;
         }

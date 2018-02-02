@@ -17,15 +17,15 @@ public class Wall : MonoBehaviour
 
     void Update()
     {
-        if (mvmt.instance.dreaming)
+        if (Mvmt.instance.dreaming)
         {
             coll.enabled = false;
-            anim.SetInteger("Dreaming", 1);
+            anim.SetInteger("Toggled", 1);
         }
         else
         {
             coll.enabled = true;
-            anim.SetInteger("Dreaming", -1);
+            anim.SetInteger("Toggled", -1);
         }
     }
 }

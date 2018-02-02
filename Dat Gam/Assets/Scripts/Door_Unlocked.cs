@@ -13,14 +13,14 @@ public class Door_Unlocked : MonoBehaviour {
         anim = GetComponent<Animator>();
 	}
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D()
     {
-        anim.SetInteger("Open", 1);
+        anim.SetInteger("Toggled", 1);
         coll.enabled = false;
     }
-    void OnTriggerExit2D(Collider2D other)
+    void OnTriggerExit2D()
     {
-        anim.SetInteger("Open", -1);
+        anim.SetInteger("Toggled", -1);
         coll.enabled = true;
     }
 

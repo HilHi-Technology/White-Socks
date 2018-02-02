@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class mvmt : MonoBehaviour {
+public class Mvmt : MonoBehaviour {
 
     public float moveSpeed;
     float x = 0;
     float y = 0;
 
-    public static mvmt instance;
+    public static Mvmt instance;
 
     bool touchingBed;
     bool e;
