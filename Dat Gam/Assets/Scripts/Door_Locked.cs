@@ -27,7 +27,7 @@ public class Door_Locked : MonoBehaviour {
         }
         if (locked < 0)
         {
-            lockText = true;
+            anim.SetTrigger("Hit");
         }
     }
     void OnTriggerExit2D(Collider2D other)
@@ -55,5 +55,7 @@ public class Door_Locked : MonoBehaviour {
     void Update ()
     {
         locked = Lever.instance.pressed;
+
+        anim.SetInteger("Locked", locked);
     }
 }
