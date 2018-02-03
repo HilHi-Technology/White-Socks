@@ -6,9 +6,7 @@ public class DoorActivator : MonoBehaviour
 {
     //Call class of door and switches
     public List<ActivateDoor> activators;
-    public int locked;
-
-    bool e;
+    public KeyCode InteractKey = KeyCode.E;
 
     void Start()
     {
@@ -20,9 +18,8 @@ public class DoorActivator : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("e")) { e = true; } else { e = false; }
-
         //Loop through the activators
+
         for (int i = 0; i < activators.Count; i++)
         {
             //If our switches are all activated
@@ -34,17 +31,18 @@ public class DoorActivator : MonoBehaviour
                     for (int k = 0; k < activators[i].switches.Count; k++)
                     {
                         //We double check to see if our switches are true
-                        if (activators[i].activatedSwitches[activators[i].switches[k].name] == true)
+                        if (activators[i].activatedSwitches[activators[i].switches[k].gameObject.name] == true)
                         {
                             //And if they are then activate our door.
                             //Instead of having this here you can switch it to do something else for your
                             //door
-                            activators[i].door.GetComponent<Animator>().SetInteger("Toggled", 1);
-                            activators[i].door.GetComponent<Collider2D>().enabled = false;
-                        }
-                        else
-                        {
-                            if (activators[i].activatedSwitches[activators[i].switches[k].name] == false)
+                            if (activators[i].switches[j].GetComponent<Lever>().pressed > 0)
+                            {
+                                activators[i].door.GetComponent<Animator>().SetInteger("Toggled", 1);
+                                activators[i].door.GetComponent<Collider2D>().enabled = false;
+                            }
+
+                            else
                             {
                                 activators[i].door.GetComponent<Animator>().SetInteger("Toggled", -1);
                                 activators[i].door.GetComponent<Collider2D>().enabled = true;
@@ -69,6 +67,7 @@ public class DoorActivator : MonoBehaviour
                 if (other.gameObject == activators[i].switches[j]
                     && !(activators[i].activatedSwitches.ContainsKey(activators[i].switches[j].name)))
                 {
+                    Debug.Log("Activate Switch!");
                     //We add the activated switch to the activator containing it and set it to true.
                     activators[i].activatedSwitches.Add(activators[i].switches[j].name, true);
                 }
@@ -88,17 +87,11 @@ public class DoorActivator : MonoBehaviour
                 //and our list does not already have it then set it
                 //as activated. Meaning add it to the activatedSwitches list.
                 if (other.gameObject == activators[i].switches[j]
-                    && !(activators[i].activatedSwitches.ContainsKey(activators[i].switches[j].name)))
+                    && !(activators[i].activatedSwitches.ContainsKey(activators[i].switches[j].gameObject.name)))
                 {
                     //We add the activated switch to the activator containing it and set it to true.
                     activators[i].activatedSwitches.Add(activators[i].switches[j].name, false);
-
-                    if (locked > 1)
-                    {
-                        activators[i].door.GetComponent<Animator>().SetInteger("Toggled", 0);
-                        activators[i].door.GetComponent<Collider2D>().enabled = true;
-                    }
-
+                    Debug.Log("De-activated Switch!");
                 }
             }
         }
@@ -111,9 +104,10 @@ public class ActivateDoor
     [Header("Doors")]
     public GameObject door;
 
+    //The switches now use the Lever script to access some of its components
     [Header("Switches")]
     public List<GameObject> switches;
     
-    [Header("Activated switches")]
+    [Header("Activated Switches")]
     public Dictionary<string, bool> activatedSwitches;
 }
