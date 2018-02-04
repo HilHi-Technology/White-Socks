@@ -5,23 +5,25 @@ using UnityEngine;
 public class Door_Unlocked : MonoBehaviour {
 
     Animator anim;
-    BoxCollider2D coll;
 
     void Start ()
     {
-        coll = GetComponent<BoxCollider2D>();
         anim = GetComponent<Animator>();
 	}
 
     void OnTriggerEnter2D()
     {
-        anim.SetInteger("Toggled", 1);
-        coll.enabled = false;
+        if (!Mvmt.instance.dreaming)
+        {
+            anim.SetInteger("Toggled", 1);
+        }
     }
     void OnTriggerExit2D()
     {
-        anim.SetInteger("Toggled", -1);
-        coll.enabled = true;
+        if (!Mvmt.instance.dreaming)
+        {
+            anim.SetInteger("Toggled", -1);
+        }
     }
 
     void Update ()

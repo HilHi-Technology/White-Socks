@@ -5,11 +5,18 @@ using UnityEngine;
 public class Bed : MonoBehaviour {
 
     bool e;
+    bool q;
+
     bool touching;
+
+    public GameObject sleeping;
+    GameObject sleep;
+
+    Vector3 location;
 
 	void Start ()
     {
-
+        location = transform.position;
 	}
 
     void OnTriggerEnter2D(Collider2D other)
@@ -24,7 +31,18 @@ public class Bed : MonoBehaviour {
     void Update ()
     {
 		if (Input.GetKeyDown("e")) { e = true; } else { e = false; }
+        if (Input.GetKeyDown("q")) { q = true; } else { q = false; }
 
-        if (touching && e) { Mvmt.instance.dreaming = true; }
+        if (touching && e)
+        {
+            Mvmt.instance.dreaming = true;
+            Mvmt.instance.awake = location;
+
+            sleep = Instantiate (sleeping, transform.position, transform.rotation);
+        }
+        if (q)
+        {
+            Destroy(sleep);
+        }
 	}
 }
