@@ -34,7 +34,7 @@ public class Door_Activator : MonoBehaviour
                         if (activators[i].activatedSwitches[activators[i].switches[k].gameObject.name] == true)
                         {
                             //And if they are then activate door.
-                            if (activators[i].switches[j].GetComponent<Lever>().pressed > 0)
+                            if (activators[i].switches[j].GetComponent<Toggled_Object>().pressed > 0)
                             {
                                 activators[i].door.GetComponent<Animator>().SetInteger("Locked", 1);
                                 activators[i].door.GetComponent<Collider2D>().enabled = false;
@@ -43,14 +43,10 @@ public class Door_Activator : MonoBehaviour
                             else
                             {
                                 activators[i].door.GetComponent<Animator>().SetInteger("Locked", -1);
+                                activators[i].door.GetComponent<Collider2D>().enabled = true;
                             }
 
                         }
-                        else
-                        {
-                            activators[i].door.GetComponent<Collider2D>().enabled = true;
-                        }
-
                     }
                 }
             }

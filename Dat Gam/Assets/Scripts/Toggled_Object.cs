@@ -2,39 +2,53 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Toggled_Object : MonoBehaviour {
+public class Toggled_Object : MonoBehaviour
+{
 
+    public int pressed;
+    public static Toggled_Object instance;
     public int active;
 
-    Animator anim;
-    BoxCollider2D coll;
+    bool touching;
+    bool e;
 
-	void Start ()
+    public float delay;
+
+    Animator anim;
+
+    void Start()
     {
         anim = GetComponent<Animator>();
-        coll = GetComponent<BoxCollider2D>();
+        instance = this;
     }
-	
-	
-	void Update ()
-    {
-        active = Lever.instance.pressed;
- 
-        anim.SetInteger("Toggled", active);
 
-        if (Mvmt.instance.dreaming)
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        touching = true;
+    }
+    void OnTriggerExit2D(Collider2D other)
+    {
+        touching = false;
+    }
+
+    void timeWait()
+    {
+        pressed = -pressed;
+        anim.SetInteger("Pressed", pressed);
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown("e")) { e = true; } else { e = false; }
+
+        if (touching && e)
         {
-            coll.enabled = false;
-        }
-        else
-        {
-            if (active > 0)
+            pressed = -pressed;
+            anim.SetInteger("Pressed", pressed);
+
+            if (delay != 0)
             {
-              coll.enabled = false;
-            }
-            else
-            {
-                coll.enabled = true;
+                Invoke("timeWait", delay);
             }
         }
     }

@@ -35,10 +35,13 @@ public class Bed : MonoBehaviour {
 
         if (touching && e)
         {
+            if (!Mvmt.instance.dreaming)
+            {
+                sleep = Instantiate(sleeping, transform.position, transform.rotation);
+            }
+
             Mvmt.instance.dreaming = true;
             Mvmt.instance.awake = location;
-
-            sleep = Instantiate (sleeping, transform.position, transform.rotation);
         }
         if (q)
         {

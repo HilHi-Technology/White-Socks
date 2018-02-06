@@ -286,12 +286,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Bed.cs" />
-    <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\Door_Activator.cs" />
     <Compile Include="Assets\Scripts\Door_Locked.cs" />
     <Compile Include="Assets\Scripts\Door_Unlocked.cs" />
-    <Compile Include="Assets\Scripts\Lever.cs" />
     <Compile Include="Assets\Scripts\Mvmt.cs" />
     <Compile Include="Assets\Scripts\Toggled_Object.cs" />
     <Compile Include="Assets\Scripts\Wall.cs" />
