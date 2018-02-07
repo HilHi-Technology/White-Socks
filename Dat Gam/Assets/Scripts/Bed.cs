@@ -12,11 +12,13 @@ public class Bed : MonoBehaviour {
     public GameObject sleeping;
     GameObject sleep;
 
+    Animator playerAnim;
     Vector3 location;
 
 	void Start ()
     {
         location = transform.position;
+        playerAnim = Mvmt.instance.GetComponent<Animator>();
 	}
 
     void OnTriggerEnter2D(Collider2D other)
@@ -33,15 +35,18 @@ public class Bed : MonoBehaviour {
 		if (Input.GetKeyDown("e")) { e = true; } else { e = false; }
         if (Input.GetKeyDown("q")) { q = true; } else { q = false; }
 
-        if (touching && e)
+        if (touching && e && !Mvmt.instance.dreaming)
         {
-            if (!Mvmt.instance.dreaming)
-            {
-                sleep = Instantiate(sleeping, transform.position, transform.rotation);
-            }
+            sleep = Instantiate(sleeping, transform.position, transform.rotation);
+
+            playerAnim.speed = 1;
+            playerAnim.SetBool("Dreaming", true);
+            playerAnim.speed = 0;
 
             Mvmt.instance.dreaming = true;
             Mvmt.instance.awake = location;
+
+            Tutorial.instance.dreaming = true;
         }
         if (q)
         {

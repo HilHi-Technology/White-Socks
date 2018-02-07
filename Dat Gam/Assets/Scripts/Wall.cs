@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Wall : MonoBehaviour
 {
+    public bool impermeable;
 
     Animator anim;
     BoxCollider2D coll;
@@ -19,7 +20,11 @@ public class Wall : MonoBehaviour
     {
         if (Mvmt.instance.dreaming)
         {
-            coll.enabled = false;
+            if (!impermeable)
+            {
+                coll.enabled = false;
+            }
+
             anim.SetInteger("Toggled", 1);
         }
         else

@@ -1,11 +1,13 @@
 fileFormatVersion: 2
 guid: d6b098239dee5494db916d009945d0ef
-timeCreated: 1517858865
+timeCreated: 1517972114
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Button_active
     21300002: Button_inactive
+    21300004: lever_up
+    21300006: lever_down
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -90,7 +92,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -101,6 +103,34 @@ TextureImporter:
         serializedVersion: 2
         x: 104
         y: 44
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lever_up
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: lever_down
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
         width: 16
         height: 16
       alignment: 0

@@ -34,15 +34,18 @@ public class Mvmt : MonoBehaviour {
         {
             dreaming = false;
             transform.position = awake;
+
+            anim.speed = 1;
+            anim.SetBool("Dreaming", dreaming);
+            anim.speed = 0;
         }
 
         if (x != 0 || y != 0)                   //Update Animation
         {
             anim.speed = 1;
-            
+
             anim.SetFloat("Move_Ver", y);
             anim.SetFloat("Move_Hor", x);
-            anim.SetBool("Dreaming", dreaming);
 
             if (y != 0)
             {
@@ -59,8 +62,8 @@ public class Mvmt : MonoBehaviour {
             anim.speed = 0;
         }
 
+        anim.SetBool("Dreaming", dreaming);
+
         rb.velocity = new Vector2(x, y);        //Move
-
-
     }
 }

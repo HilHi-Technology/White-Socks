@@ -292,6 +292,7 @@
     <Compile Include="Assets\Scripts\Door_Unlocked.cs" />
     <Compile Include="Assets\Scripts\Mvmt.cs" />
     <Compile Include="Assets\Scripts\Toggled_Object.cs" />
+    <Compile Include="Assets\Scripts\Tutorial.cs" />
     <Compile Include="Assets\Scripts\Wall.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

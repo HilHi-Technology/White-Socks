@@ -1,12 +1,14 @@
 fileFormatVersion: 2
 guid: 6b274ae155abfb34c8be22f6f5b4dd3c
-timeCreated: 1517271677
+timeCreated: 1517976012
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: Wall1
     21300002: Wall1-Dream
     21300004: Floor1
+    21300006: Brick
+    21300008: Brick_Dream
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -106,6 +108,34 @@ TextureImporter:
         height: 17
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Brick
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Brick_Dream
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 45
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

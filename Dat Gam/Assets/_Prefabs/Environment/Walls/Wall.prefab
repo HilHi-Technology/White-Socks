@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!212 &212217755461957900
 SpriteRenderer:
   m_ObjectHideFlags: 1

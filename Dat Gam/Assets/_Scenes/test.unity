@@ -189,14 +189,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 44646306}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ab9c1fcbc7373e46b0f0ecd6252199f, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f0ada367baabcd4ea63b7dc064acdce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pressed: -1
+  pressed: 0
   active: 0
-  touching: 0
-  e: 0
-  anim: {fileID: 0}
+  delay: 0
 --- !u!95 &44646308
 Animator:
   serializedVersion: 3
@@ -276,7 +274,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: 375a7aaf8f243f04d8771ae78b16ccf7, type: 3}
+  m_Sprite: {fileID: 21300006, guid: d6b098239dee5494db916d009945d0ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -298,7 +296,7 @@ Transform:
   m_LocalScale: {x: 0.19999999, y: 0.19999999, z: 1}
   m_Children: []
   m_Father: {fileID: 1004785751}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &79536526 stripped
 GameObject:
@@ -1835,6 +1833,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 212547214279188796, guid: e5ee5452f32caf046983c72c6ef155c4,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300006, guid: d6b098239dee5494db916d009945d0ef,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e5ee5452f32caf046983c72c6ef155c4, type: 2}
   m_IsPrefabParent: 0
@@ -2713,7 +2717,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &777050373
 Transform:
   m_ObjectHideFlags: 0
@@ -2951,8 +2955,8 @@ Transform:
   m_LocalPosition: {x: -0.94761264, y: 0.0011374033, z: -0.011962891}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1009029981}
   - {fileID: 44646311}
+  - {fileID: 1009029981}
   - {fileID: 808026474}
   m_Father: {fileID: 777050373}
   m_RootOrder: 1
@@ -3107,7 +3111,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.18, z: 1}
   m_Children: []
   m_Father: {fileID: 1004785751}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1020842154 stripped
 Transform:
