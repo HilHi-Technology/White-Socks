@@ -13,9 +13,9 @@ public class Tutorial : MonoBehaviour {
     public bool end;         bool ended = false;
 
     bool e;
-    string text;
 
-    Vector3 obj;
+    string text;
+    
     public static Tutorial instance;
     Animator anim;
 
@@ -25,7 +25,6 @@ public class Tutorial : MonoBehaviour {
 	void Start ()
     {
         anim = GetComponent<Animator>();
-        obj = GameObject.Find("Tutorial").transform.position;
         instance = this;
 
         start = true;
@@ -34,7 +33,6 @@ public class Tutorial : MonoBehaviour {
     void OnGUI()
     {
         GUI.color = Color.black;
-        //GUI.Label(new Rect(obj.x - (1/10), obj.y + (1 / 10), obj.x + (1 / 10), obj.y + (1 / 10)), text);
         GUI.Label(new Rect(0, 0, Screen.width, Screen.height), text);
     }
 
@@ -42,14 +40,13 @@ public class Tutorial : MonoBehaviour {
     {
         if (lever_1.GetComponent<Toggled_Object>().pressed > 0) { bed = true; }
         if (lever_2.GetComponent<Toggled_Object>().pressed > 0) { end = true; }
-        if (Input.GetKeyDown("e")) { e = true; } else { e = false; }
 
-
+        if (Input.GetKeyDown("return")) { e = true; } else { e = false; }
 
         if (start && !started)
         {
             anim.speed = 1;
-            text = "Press WASD to move <e to continue>";
+            text = "Press WASD to move <enter to continue>";
 
             if (e)
             {
@@ -65,7 +62,7 @@ public class Tutorial : MonoBehaviour {
         if (lever1 && !lever1ed)
         {
             anim.speed = 1;
-            text = "Move to the lever and press [e] <e to continue>";
+            text = "Move to the lever and press [e] <enter to continue>";
 
             if (e)
             {
@@ -80,7 +77,7 @@ public class Tutorial : MonoBehaviour {
         if (bed && !beded)
         {
             anim.speed = 1;
-            text = "Move to the bed and press [e] to go to sleep <e to continue>";
+            text = "Move to the bed and press [e] to go to sleep <enter to continue>";
 
             if (e)
             {
@@ -95,7 +92,7 @@ public class Tutorial : MonoBehaviour {
         if (dreaming && !dreamed)
         {
             anim.speed = 1;
-            text = "Now that you're asleep, you can walk through some walls! <e to continue>";
+            text = "Now that you're asleep, you can walk through some walls! <enter to continue>";
 
             if (e)
             {
@@ -111,7 +108,7 @@ public class Tutorial : MonoBehaviour {
         if (lever2 && !lever2ed)
         {
             anim.speed = 1;
-            text = "Now you can get to the other lever, and activate it <e to continue>";
+            text = "Now you can get to the other lever, and activate it <enter to continue>";
 
             if (e)
             {
@@ -126,7 +123,7 @@ public class Tutorial : MonoBehaviour {
         if (end && !ended)
         {
             anim.speed = 1;
-            text = "Now press [q] to wake up, and you can walk to the [end object] to beat the level! <e to continue>";
+            text = "Now press [q] to wake up, and you can walk to the [end object] to beat the level! <enter to continue>";
 
             if (e)
             {
