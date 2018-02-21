@@ -5,3 +5,6 @@ git push
 
 //Update Computer
 git pull
+
+//Force a git pull
+git reset --hard origin

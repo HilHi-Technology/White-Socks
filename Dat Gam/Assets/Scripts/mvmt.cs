@@ -5,6 +5,8 @@ using UnityEngine;
 public class Mvmt : MonoBehaviour {
 
     public float moveSpeed;
+    float speed;
+
     float x = 0;
     float y = 0;
 
@@ -16,6 +18,8 @@ public class Mvmt : MonoBehaviour {
 
     Animator anim;
     Rigidbody2D rb;
+
+    public GameObject floor;
 
     void Awake()
     {
@@ -29,6 +33,7 @@ public class Mvmt : MonoBehaviour {
         x = Input.GetAxis("Horizontal");        //Get user inputs
         y = Input.GetAxis("Vertical");
         if (Input.GetKeyDown("q")) { q = true; } else { q = false; }
+        if (Input.GetKey(KeyCode.LeftShift)) { speed = 2; } else { speed = moveSpeed; }
         
         if (dreaming && q)
         {
@@ -38,6 +43,8 @@ public class Mvmt : MonoBehaviour {
             anim.speed = 1;
             anim.SetBool("Dreaming", dreaming);
             anim.speed = 0;
+
+            floor.GetComponent<Animator>().SetInteger("Toggled", -1);
         }
 
         if (x != 0 || y != 0)                   //Update Animation
@@ -64,6 +71,11 @@ public class Mvmt : MonoBehaviour {
 
         anim.SetBool("Dreaming", dreaming);
 
-        rb.velocity = new Vector2(x, y);        //Move
+        if (dreaming)
+        {
+            floor.GetComponent<Animator>().SetInteger("Toggled", 1);
+        }
+
+        rb.velocity = new Vector2(x * speed, y * speed);        //Move
     }
 }

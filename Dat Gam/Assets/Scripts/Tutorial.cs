@@ -17,14 +17,12 @@ public class Tutorial : MonoBehaviour {
     string text;
     
     public static Tutorial instance;
-    Animator anim;
 
     public GameObject lever_1;
     public GameObject lever_2;
 
 	void Start ()
     {
-        anim = GetComponent<Animator>();
         instance = this;
 
         start = true;
@@ -45,15 +43,12 @@ public class Tutorial : MonoBehaviour {
 
         if (start && !started)
         {
-            anim.speed = 1;
             text = "Press WASD to move <enter to continue>";
 
             if (e)
             {
                 text = "";
                 started = true;
-                anim.speed = 0;
-                anim.Play(0);
                 lever1 = true;
                 e = false;
             }
@@ -61,45 +56,36 @@ public class Tutorial : MonoBehaviour {
 
         if (lever1 && !lever1ed)
         {
-            anim.speed = 1;
             text = "Move to the lever and press [e] <enter to continue>";
 
             if (e)
             {
                 text = "";
                 lever1ed = true;
-                anim.speed = 0;
-                anim.Play(0);
                 e = false;
             }
         }
 
         if (bed && !beded)
         {
-            anim.speed = 1;
             text = "Move to the bed and press [e] to go to sleep <enter to continue>";
 
             if (e)
             {
                 text = "";
                 beded = true;
-                anim.speed = 0;
-                anim.Play(0);
                 e = false;
             }
         }
 
         if (dreaming && !dreamed)
         {
-            anim.speed = 1;
             text = "Now that you're asleep, you can walk through some walls! <enter to continue>";
 
             if (e)
             {
                 text = "";
                 dreamed = true;
-                anim.speed = 0;
-                anim.Play(0);
                 e = false;
                 lever2 = true;
             }
@@ -107,30 +93,24 @@ public class Tutorial : MonoBehaviour {
 
         if (lever2 && !lever2ed)
         {
-            anim.speed = 1;
             text = "Now you can get to the other lever, and activate it <enter to continue>";
 
             if (e)
             {
                 text = "";
                 lever2ed = true;
-                anim.speed = 0;
-                anim.Play(0);
                 e = false;
             }
         }
 
         if (end && !ended)
         {
-            anim.speed = 1;
             text = "Now press [q] to wake up, and you can walk to the [end object] to beat the level! <enter to continue>";
 
             if (e)
             {
                 text = "";
                 ended = true;
-                anim.speed = 0;
-                anim.Play(0);
                 e = false;
             }
         }

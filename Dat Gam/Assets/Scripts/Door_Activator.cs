@@ -52,7 +52,11 @@ public class Door_Activator : MonoBehaviour
             }
             if (Mvmt.instance.dreaming)
             {
-                activators[i].door.GetComponent<Collider2D>().enabled = false;
+                if (!activators[i].impermeable)
+                {
+                    activators[i].door.GetComponent<Collider2D>().enabled = false;
+                }
+
             }
         }
     }
@@ -101,6 +105,7 @@ public class ActivateDoor
 {
     [Header("Doors")]
     public GameObject door;
+    public bool impermeable;
 
     [Header("Switches")]
     public List<GameObject> switches;

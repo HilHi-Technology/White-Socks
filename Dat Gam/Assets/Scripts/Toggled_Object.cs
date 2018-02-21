@@ -9,6 +9,8 @@ public class Toggled_Object : MonoBehaviour
     public static Toggled_Object instance;
     public int active;
 
+    public int toggled_when; //0 = anytime, 1 = awake, 2 = asleep
+
     bool touching;
     bool e;
 
@@ -43,12 +45,15 @@ public class Toggled_Object : MonoBehaviour
 
         if (touching && e)
         {
-            pressed = -pressed;
-            anim.SetInteger("Pressed", pressed);
-
-            if (delay != 0)
+            if ((toggled_when == 2 && Mvmt.instance.dreaming) || (toggled_when == 1 && !Mvmt.instance.dreaming) || (toggled_when == 0))
             {
-                Invoke("timeWait", delay);
+                pressed = -pressed;
+                anim.SetInteger("Pressed", pressed);
+
+                if (delay != 0)
+                {
+                    Invoke("timeWait", delay);
+                }
             }
         }
     }

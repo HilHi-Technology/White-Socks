@@ -6,11 +6,14 @@ public class Door_Locked : MonoBehaviour {
 
     public int locked;
 
+    public Door_Locked instance;
+
     Animator anim;
 
     void Start()
     {
         anim = GetComponent<Animator>();
+        instance = this;
     }
 
     void OnTriggerEnter2D(Collider2D other)

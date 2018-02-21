@@ -6,6 +6,8 @@ public class Wall : MonoBehaviour
 {
     public bool impermeable;
 
+    bool chanced = false;
+
     Animator anim;
     BoxCollider2D coll;
 
@@ -25,12 +27,25 @@ public class Wall : MonoBehaviour
                 coll.enabled = false;
             }
 
-            anim.SetInteger("Toggled", 1);
+            if (!chanced)
+            {
+                /*if (Random.Range(0, 10) == 9)
+                {
+                    anim.SetTrigger("Chance");
+                }
+                else
+                {*/
+                    anim.SetInteger("Toggled", 1);
+                //}
+
+                //chanced = true;
+            }
         }
         else
         {
             coll.enabled = true;
             anim.SetInteger("Toggled", -1);
+            chanced = false;
         }
     }
 }
