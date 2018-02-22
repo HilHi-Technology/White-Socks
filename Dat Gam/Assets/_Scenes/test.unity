@@ -194,6 +194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pressed: 0
   active: 0
+  toggled_when: 0
   delay: 0
 --- !u!95 &44646308
 Animator:
@@ -402,7 +403,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &105201666
 MonoBehaviour:
@@ -415,6 +416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &105201667
 Animator:
   serializedVersion: 3
@@ -536,7 +538,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &139348676
 MonoBehaviour:
@@ -549,6 +551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &139348677
 Animator:
   serializedVersion: 3
@@ -687,7 +690,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &164296987
 MonoBehaviour:
@@ -700,6 +703,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &164296988
 Animator:
   serializedVersion: 3
@@ -816,7 +820,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &212017208
 MonoBehaviour:
@@ -829,6 +833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &212017209
 Animator:
   serializedVersion: 3
@@ -945,7 +950,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &260072787
 MonoBehaviour:
@@ -958,6 +963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &260072788
 Animator:
   serializedVersion: 3
@@ -1074,7 +1080,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &284421755
 MonoBehaviour:
@@ -1087,6 +1093,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &284421756
 Animator:
   serializedVersion: 3
@@ -1301,7 +1308,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &429991673
 MonoBehaviour:
@@ -1314,6 +1321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &429991674
 Animator:
   serializedVersion: 3
@@ -1430,7 +1438,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &451111493
 MonoBehaviour:
@@ -1443,6 +1451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &451111494
 Animator:
   serializedVersion: 3
@@ -1559,7 +1568,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &463070073
 MonoBehaviour:
@@ -1572,6 +1581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &463070074
 Animator:
   serializedVersion: 3
@@ -1946,7 +1956,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &649465655
 MonoBehaviour:
@@ -1959,6 +1969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &649465656
 Animator:
   serializedVersion: 3
@@ -2038,6 +2049,11 @@ Prefab:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114621593644892948, guid: ce189dc950e74a2419172c18686fb745,
+        type: 2}
+      propertyPath: floor
+      value: 
+      objectReference: {fileID: 155899060}
     m_RemovedComponents:
     - {fileID: 114903873490007792, guid: ce189dc950e74a2419172c18686fb745, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ce189dc950e74a2419172c18686fb745, type: 2}
@@ -2141,7 +2157,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &653486416
 MonoBehaviour:
@@ -2154,6 +2170,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &653486417
 Animator:
   serializedVersion: 3
@@ -2270,7 +2287,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &678720469
 MonoBehaviour:
@@ -2283,6 +2300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &678720470
 Animator:
   serializedVersion: 3
@@ -2399,7 +2417,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &708667170
 MonoBehaviour:
@@ -2412,6 +2430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &708667171
 Animator:
   serializedVersion: 3
@@ -2528,7 +2547,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &719937132
 MonoBehaviour:
@@ -2541,6 +2560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &719937133
 Animator:
   serializedVersion: 3
@@ -2657,7 +2677,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &740726945
 MonoBehaviour:
@@ -2670,6 +2690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &740726946
 Animator:
   serializedVersion: 3
@@ -2832,7 +2853,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &793609000
 MonoBehaviour:
@@ -2845,6 +2866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &793609001
 Animator:
   serializedVersion: 3
@@ -2994,6 +3016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   locked: -1
+  instance: {fileID: 0}
 --- !u!70 &1009029977
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3217,7 +3240,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1034113273
 MonoBehaviour:
@@ -3230,6 +3253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1034113274
 Animator:
   serializedVersion: 3
@@ -3430,7 +3454,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1075681965
 MonoBehaviour:
@@ -3443,6 +3467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1075681966
 Animator:
   serializedVersion: 3
@@ -3559,7 +3584,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1138568281
 MonoBehaviour:
@@ -3572,6 +3597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1138568282
 Animator:
   serializedVersion: 3
@@ -3721,7 +3747,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1162193039
 MonoBehaviour:
@@ -3734,6 +3760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1162193040
 Animator:
   serializedVersion: 3
@@ -3850,7 +3877,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1187187193
 MonoBehaviour:
@@ -3863,6 +3890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1187187194
 Animator:
   serializedVersion: 3
@@ -3979,7 +4007,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1211905148
 MonoBehaviour:
@@ -3992,6 +4020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1211905149
 Animator:
   serializedVersion: 3
@@ -4108,7 +4137,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1225443652
 MonoBehaviour:
@@ -4121,6 +4150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1225443653
 Animator:
   serializedVersion: 3
@@ -4237,7 +4267,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1238001614
 MonoBehaviour:
@@ -4250,6 +4280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1238001615
 Animator:
   serializedVersion: 3
@@ -4408,7 +4439,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1399067552
 MonoBehaviour:
@@ -4421,6 +4452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1399067553
 Animator:
   serializedVersion: 3
@@ -4537,7 +4569,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1515741657
 MonoBehaviour:
@@ -4550,6 +4582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1515741658
 Animator:
   serializedVersion: 3
@@ -4671,7 +4704,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1556563151
 MonoBehaviour:
@@ -4684,6 +4717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1556563152
 Animator:
   serializedVersion: 3
@@ -4719,9 +4753,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activators:
   - door: {fileID: 1009029975}
+    impermeable: 0
     switches:
     - {fileID: 808026470}
   - door: {fileID: 79536526}
+    impermeable: 0
     switches:
     - {fileID: 1537268671}
   InteractKey: 101
@@ -4824,7 +4860,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1627361043
 MonoBehaviour:
@@ -4837,6 +4873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1627361044
 Animator:
   serializedVersion: 3
@@ -4953,7 +4990,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1670510536
 MonoBehaviour:
@@ -4966,6 +5003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1670510537
 Animator:
   serializedVersion: 3
@@ -5082,7 +5120,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1691886236
 MonoBehaviour:
@@ -5095,6 +5133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1691886237
 Animator:
   serializedVersion: 3
@@ -5211,7 +5250,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1779543783
 MonoBehaviour:
@@ -5224,6 +5263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1779543784
 Animator:
   serializedVersion: 3
@@ -5340,7 +5380,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1783677172
 MonoBehaviour:
@@ -5353,6 +5393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1783677173
 Animator:
   serializedVersion: 3
@@ -5469,7 +5510,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1817781722
 MonoBehaviour:
@@ -5482,6 +5523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1817781723
 Animator:
   serializedVersion: 3
@@ -5598,7 +5640,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1850423423
 MonoBehaviour:
@@ -5611,6 +5653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1850423424
 Animator:
   serializedVersion: 3
@@ -5727,7 +5770,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1976445484
 MonoBehaviour:
@@ -5740,6 +5783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1976445485
 Animator:
   serializedVersion: 3
@@ -5856,7 +5900,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1982254008
 MonoBehaviour:
@@ -5869,6 +5913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1982254009
 Animator:
   serializedVersion: 3
@@ -5985,7 +6030,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &1990234386
 MonoBehaviour:
@@ -5998,6 +6043,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &1990234387
 Animator:
   serializedVersion: 3
@@ -6114,7 +6160,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &2053738985
 MonoBehaviour:
@@ -6127,6 +6173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &2053738986
 Animator:
   serializedVersion: 3
@@ -6243,7 +6290,7 @@ SpriteRenderer:
   m_Size: {x: 2, y: 2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!114 &2091036645
 MonoBehaviour:
@@ -6256,6 +6303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2008d75e2b36a7a4094884de85bae4fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  impermeable: 0
 --- !u!95 &2091036646
 Animator:
   serializedVersion: 3

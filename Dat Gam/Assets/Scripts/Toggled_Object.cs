@@ -33,7 +33,7 @@ public class Toggled_Object : MonoBehaviour
         touching = false;
     }
 
-    void timeWait()
+    void TimeWait()
     {
         pressed = -pressed;
         anim.SetInteger("Pressed", pressed);
@@ -52,7 +52,7 @@ public class Toggled_Object : MonoBehaviour
 
                 if (delay != 0)
                 {
-                    Invoke("timeWait", delay);
+                    Invoke("TimeWait", delay);
                 }
             }
         }

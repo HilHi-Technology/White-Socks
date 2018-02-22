@@ -7,4 +7,5 @@ git push
 git pull
 
 //Force a git pull
+git fetch --all
 git reset --hard origin

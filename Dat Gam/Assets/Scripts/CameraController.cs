@@ -7,22 +7,22 @@ public class CameraController : MonoBehaviour {
     public GameObject player;
     private Vector3 offset;
 
-    bool changed = false;
+    //bool changed = false;
     public List<Color> colors;
 
-    Camera cam;
+    //Camera cam;
 
 	void Start ()
     {
         offset = transform.position - player.transform.position;
-        cam = GetComponent<Camera>();
+        //cam = GetComponent<Camera>();
     }
 	
 	void LateUpdate ()
     {
         transform.position = player.transform.position + offset;
 
-        if (Mvmt.instance.dreaming)
+        /*if (Mvmt.instance.dreaming)
         {
             if (!changed)
             {
@@ -34,6 +34,6 @@ public class CameraController : MonoBehaviour {
         {
             cam.backgroundColor = Color.gray;
             changed = false;
-        }
+        }*/
 	}
 }
