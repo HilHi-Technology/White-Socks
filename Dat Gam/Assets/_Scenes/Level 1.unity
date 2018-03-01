@@ -12619,6 +12619,10 @@ Prefab:
       propertyPath: activators.Array.data[4].switches.Array.data[0]
       value: 
       objectReference: {fileID: 1362475153}
+    - target: {fileID: 1034570059501304, guid: ce189dc950e74a2419172c18686fb745, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ce189dc950e74a2419172c18686fb745, type: 2}
   m_IsPrefabParent: 0
@@ -26298,6 +26302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
+  range: 1.5
   errorMargin: 0.01
   pathway:
   - {x: 1.7, y: 3.5, z: 0}
