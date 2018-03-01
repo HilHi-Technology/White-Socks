@@ -26297,7 +26297,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a249a463c3169ce44b6216482be8642c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.1
+  speed: 1
+  errorMargin: 0.01
   pathway:
   - {x: 1.7, y: 3.5, z: 0}
   - {x: 1.7, y: 0.5, z: 0}
