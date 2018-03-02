@@ -16,17 +16,17 @@ public class Door_Locked : MonoBehaviour {
         instance = this;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!Mvmt.instance.dreaming)
+        if (!Mvmt.instance.dreaming && collision.tag == "Player")
         {
             anim.SetInteger("Toggled", 1);
             anim.SetTrigger("Hit");
         }
     }
-    void OnTriggerExit2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D collision)
     {
-        if (!Mvmt.instance.dreaming)
+        if (!Mvmt.instance.dreaming && collision.tag == "Player")
         {
             anim.SetInteger("Toggled", -1);
         }

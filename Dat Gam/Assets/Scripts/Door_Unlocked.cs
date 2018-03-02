@@ -11,16 +11,16 @@ public class Door_Unlocked : MonoBehaviour {
         anim = GetComponent<Animator>();
 	}
 
-    void OnTriggerEnter2D()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!Mvmt.instance.dreaming)
+        if (!Mvmt.instance.dreaming && collision.tag == "Player")
         {
             anim.SetInteger("Toggled", 1);
         }
     }
-    void OnTriggerExit2D()
+    void OnTriggerExit2D(Collider2D collision)
     {
-        if (!Mvmt.instance.dreaming)
+        if (!Mvmt.instance.dreaming && collision.tag == "Player")
         {
             anim.SetInteger("Toggled", -1);
         }

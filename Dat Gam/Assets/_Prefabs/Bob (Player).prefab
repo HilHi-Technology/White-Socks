@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114903873490007792}
   m_Layer: 0
   m_Name: Bob (Player)
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -38,8 +38,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1034570059501304}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -58,7 +58,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -77,8 +77,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.1}
-  m_Size: {x: 0.145, y: 0.17}
+  m_Offset: {x: 0, y: -0.09}
+  m_Size: {x: 0.145, y: 0.2}
   m_Direction: 0
 --- !u!95 &95187484772836262
 Animator:
@@ -108,8 +108,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19da2d4872facc243970b86249981c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.7
+  moveSpeed: 1.2
   dreaming: 0
+  awake: {x: 0, y: 0, z: 0}
+  floor: {fileID: 0}
 --- !u!114 &114903873490007792
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -121,7 +123,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54b073fdb0553294fbb9cf14183426df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activators: []
+  activators:
+  - door: {fileID: 0}
+    impermeable: 1
+    switches:
+    - {fileID: 0}
+  - door: {fileID: 0}
+    impermeable: 0
+    switches:
+    - {fileID: 0}
+  - door: {fileID: 0}
+    impermeable: 1
+    switches:
+    - {fileID: 0}
+  - door: {fileID: 0}
+    impermeable: 0
+    switches:
+    - {fileID: 0}
+  - door: {fileID: 0}
+    impermeable: 0
+    switches:
+    - {fileID: 0}
   InteractKey: 101
 --- !u!212 &212534551042974134
 SpriteRenderer:

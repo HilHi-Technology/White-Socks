@@ -11,15 +11,16 @@ public class NurseController : MonoBehaviour {
     public List<Vector3> pathway;
     int location = 0;
     int total = 0;
-
+    bool ver;
     float x;
     float y;
-
-    RaycastHit hit = new RaycastHit();
+    bool sighted;
 
     Vector3 target;
     GameObject player;
     Animator anim;
+    Transform coll;
+    CircleCollider2D hit;
 
     void Start ()
     {
@@ -27,14 +28,21 @@ public class NurseController : MonoBehaviour {
         target = pathway[1];
         anim = GetComponent<Animator>();
         player = GameObject.Find("Bob (Player)");
+        coll = GameObject.Find("Nurse_coll").GetComponent<Transform>();
     }
 
-	void Update ()
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            Debug.Log("Captured");
+        }
+    }
+
+    void Update ()
     {
         move();
         updateAnim();
-        
-
     }
 
     void move()
@@ -46,19 +54,8 @@ public class NurseController : MonoBehaviour {
             location += 1;
             if (location > total - 1) { location = 0; }
             target = pathway[location];
-        }  
-
-        Vector3 to = player.transform.position;
-        Vector3 direction = to - transform.position;
-        if (Physics.Raycast(transform.position, direction, range) && hit.transform.tag == "Player")
-        {
-            Debug.Log("hit");
-            target = player.transform.position;
         }
-        else
-        {
-            target = pathway[location];
-        }
+        if (!NurseCollider.instance.sighted) { target = pathway[location]; } else { target = player.transform.position; }
 
         transform.position = Vector3.MoveTowards(transform.position, target, step);
     }
@@ -68,10 +65,20 @@ public class NurseController : MonoBehaviour {
         y = Mathf.Sign(target.y - transform.position.y);
         x = Mathf.Sign(target.x - transform.position.x);
 
-        if (Mathf.Abs(target.y - transform.position.y) < Mathf.Abs(target.x - transform.position.x)) { y = 0; }
+        if (Mathf.Abs(target.y - transform.position.y) < Mathf.Abs(target.x - transform.position.x)) { y = 0; ver = false; } else { ver = true; }
 
-        if (y != 0) { anim.SetBool("ver?", true); } else { anim.SetBool("ver?", false); }
+        anim.SetBool("ver?", ver);
         anim.SetInteger("x", Mathf.RoundToInt(x));
         anim.SetInteger("y", Mathf.RoundToInt(y));
+        if (ver)
+        {
+            if (y == 1) { coll.rotation = Quaternion.Euler(0, 0, 180); }
+            if (y == -1) { coll.rotation = Quaternion.Euler(0, 0, 0); }
+        }
+        else
+        {
+            if (x == 1) { coll.rotation = Quaternion.Euler(0, 0, 90); }
+            if (x == -1) { coll.rotation = Quaternion.Euler(0, 0, 270); }
+        }
     }
 }
