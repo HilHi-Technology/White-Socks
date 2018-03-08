@@ -8,9 +8,9 @@ public class Bed : MonoBehaviour {
     bool q;
 
     bool touching;
-
+    
     public GameObject sleeping;
-    GameObject sleep;
+    public GameObject sleep;
 
     Animator playerAnim;
     Vector3 location;
@@ -37,7 +37,7 @@ public class Bed : MonoBehaviour {
 
         if (touching && e && !Mvmt.instance.dreaming)
         {
-            sleep = Instantiate(sleeping, transform.position, transform.rotation);
+            Mvmt.instance.sleep = Instantiate(sleeping, transform.position, transform.rotation);
 
             playerAnim.speed = 1;
             playerAnim.SetBool("Dreaming", true);
@@ -47,10 +47,6 @@ public class Bed : MonoBehaviour {
             Mvmt.instance.awake = location;
 
             Tutorial.instance.dreaming = true;
-        }
-        if (q)
-        {
-            Destroy(sleep);
         }
 	}
 }

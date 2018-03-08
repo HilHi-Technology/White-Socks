@@ -11233,6 +11233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sleeping: {fileID: 1240727810372488, guid: d02696f6bd6c068439f2027faf197b71, type: 2}
+  nextRoom: {fileID: 102900000, guid: 851c5459aa4be0c43ad53365125ee30e, type: 3}
 --- !u!1001 &852578191
 Prefab:
   m_ObjectHideFlags: 0
@@ -26303,6 +26304,7 @@ MonoBehaviour:
   speed: 1
   range: 1.5
   errorMargin: 0.01
+  room: {fileID: 102900000, guid: 93f06bcebed378d44a699d5b7ac82324, type: 3}
   pathway:
   - {x: 1.7, y: 3.5, z: 0}
   - {x: 1.7, y: 0.5, z: 0}

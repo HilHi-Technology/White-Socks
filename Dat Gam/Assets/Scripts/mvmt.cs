@@ -16,6 +16,7 @@ public class Mvmt : MonoBehaviour {
     public bool dreaming;
     public Vector3 awake;
 
+    public GameObject sleep;
     Animator anim;
     Rigidbody2D rb;
 
@@ -37,14 +38,7 @@ public class Mvmt : MonoBehaviour {
         
         if (dreaming && q)
         {
-            dreaming = false;
-            transform.position = awake;
-
-            anim.speed = 1;
-            anim.SetBool("Dreaming", dreaming);
-            anim.speed = 0;
-
-            floor.GetComponent<Animator>().SetInteger("Toggled", -1);
+            awaken();
         }
 
         if (x != 0 || y != 0)                   //Update Animation
@@ -77,5 +71,19 @@ public class Mvmt : MonoBehaviour {
         }
 
         rb.velocity = new Vector2(x * speed, y * speed);        //Move
+    }
+
+    public void awaken()
+    {
+        dreaming = false;
+        transform.position = awake;
+
+        anim.speed = 1;
+        anim.SetBool("Dreaming", dreaming);
+        anim.speed = 0;
+
+        floor.GetComponent<Animator>().SetInteger("Toggled", -1);
+
+        Destroy(sleep);
     }
 }

@@ -10,6 +10,8 @@ public class Bed_Final : MonoBehaviour {
 
     public GameObject sleeping;
 
+    public Object nextRoom;
+
     void Start()
     {
     }
@@ -25,7 +27,7 @@ public class Bed_Final : MonoBehaviour {
 
     void TimeWait()
     {
-        SceneManager.LoadScene("test");
+        SceneManager.LoadScene(nextRoom.name);
     }
 
     void Update()

@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NurseController : MonoBehaviour {
 
     public float speed;
     public float range;
     public float errorMargin;
-
+    public Object room;
     public List<Vector3> pathway;
     int location = 0;
     int total = 0;
@@ -15,7 +16,7 @@ public class NurseController : MonoBehaviour {
     float x;
     float y;
     bool sighted;
-
+    
     Vector3 target;
     GameObject player;
     Animator anim;
@@ -31,18 +32,28 @@ public class NurseController : MonoBehaviour {
         coll = GameObject.Find("Nurse_coll").GetComponent<Transform>();
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
-        {
-            Debug.Log("Captured");
-        }
-    }
-
     void Update ()
     {
         move();
         updateAnim();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            if (Vector3.Distance(player.transform.position, transform.position) < .3)
+            {
+                if (Mvmt.instance.dreaming)
+                {
+                    Mvmt.instance.awaken();
+                }
+                else
+                {
+                    SceneManager.LoadScene(room.name);
+                }
+            }
+        }
     }
 
     void move()
@@ -80,5 +91,7 @@ public class NurseController : MonoBehaviour {
             if (x == 1) { coll.rotation = Quaternion.Euler(0, 0, 90); }
             if (x == -1) { coll.rotation = Quaternion.Euler(0, 0, 270); }
         }
+
+        if (Mvmt.instance.dreaming) { anim.SetBool("Dreaming", true); } else { anim.SetBool("Dreaming", false); }
     }
 }
