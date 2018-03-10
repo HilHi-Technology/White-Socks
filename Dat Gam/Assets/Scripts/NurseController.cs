@@ -36,22 +36,16 @@ public class NurseController : MonoBehaviour {
     {
         move();
         updateAnim();
-    }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
+        if (Vector3.Distance(transform.position, player.transform.position) < .3)
         {
-            if (Vector3.Distance(player.transform.position, transform.position) < .3)
+            if (!Mvmt.instance.dreaming)
             {
-                if (Mvmt.instance.dreaming)
-                {
-                    Mvmt.instance.awaken();
-                }
-                else
-                {
-                    SceneManager.LoadScene(room.name);
-                }
+                SceneManager.LoadScene(room.name);
+            }
+            else
+            {
+                Mvmt.instance.awaken();
             }
         }
     }

@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Door_Locked : MonoBehaviour {
 
+    public bool startLocked;
     public int locked;
 
     public Door_Locked instance;
 
+    BoxCollider2D coll;
     Animator anim;
 
     void Start()
     {
         anim = GetComponent<Animator>();
+        coll = GetComponent<BoxCollider2D>();
         instance = this;
     }
 
@@ -34,5 +37,15 @@ public class Door_Locked : MonoBehaviour {
 
     void Update ()
     {
+        if (locked == -1)
+        {
+            anim.SetInteger("Locked", 1);
+            coll.enabled = false;
+        }
+        else
+        {
+            anim.SetInteger("Locked", -1);
+            coll.enabled = true;
+        }
     }
 }

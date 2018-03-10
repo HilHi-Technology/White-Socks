@@ -37,7 +37,8 @@ public class Bed_Final : MonoBehaviour {
         if (touching && e && !Mvmt.instance.dreaming)
         {
             Instantiate(sleeping, transform.position, transform.rotation);
-            Destroy(GameObject.Find("Bob (Player)"));
+            GameObject.Find("Bob (Player)").GetComponent<SpriteRenderer>().enabled = false;
+            GameObject.Find("Bob (Player)").GetComponent<Mvmt>().enabled = false;
 
             Invoke("TimeWait", 2);
         }

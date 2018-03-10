@@ -33,17 +33,37 @@ public class Door_Activator : MonoBehaviour
                         //We double check to see if our switches are true
                         if (activators[i].activatedSwitches[activators[i].switches[k].gameObject.name] == true)
                         {
+                            GameObject doorScript = activators[i].door;
+
                             //And if they are then activate door.
                             if (activators[i].switches[j].GetComponent<Toggled_Object>().pressed > 0)
                             {
-                                activators[i].door.GetComponent<Animator>().SetInteger("Locked", 1);
-                                activators[i].door.GetComponent<Collider2D>().enabled = false;
+                                //activators[i].door.GetComponent<Animator>().SetInteger("Locked", 1);
+                                //activators[i].door.GetComponent<Collider2D>().enabled = false;
+
+                                if (doorScript.GetComponent<Door_Locked>().startLocked)
+                                {
+                                    doorScript.GetComponent<Door_Locked>().locked = -1;
+                                }
+                                else
+                                {
+                                    doorScript.GetComponent<Door_Locked>().locked = 1;
+                                }
                             }
 
                             else
                             {
-                                activators[i].door.GetComponent<Animator>().SetInteger("Locked", -1);
-                                activators[i].door.GetComponent<Collider2D>().enabled = true;
+                                //activators[i].door.GetComponent<Animator>().SetInteger("Locked", -1);
+                                //activators[i].door.GetComponent<Collider2D>().enabled = true;
+
+                                if (doorScript.GetComponent<Door_Locked>().startLocked)
+                                {
+                                    doorScript.GetComponent<Door_Locked>().locked = 1;
+                                }
+                                else
+                                {
+                                    doorScript.GetComponent<Door_Locked>().locked = -1;
+                                }
                             }
 
                         }

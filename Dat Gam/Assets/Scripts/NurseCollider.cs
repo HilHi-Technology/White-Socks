@@ -1,13 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class NurseCollider : MonoBehaviour {
 
     public static NurseCollider instance;
     public bool sighted;
 
-	void Start ()
+    public Object room;
+
+    void Start ()
     {
 		instance = this;
 	}

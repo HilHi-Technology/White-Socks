@@ -5,7 +5,6 @@ using UnityEngine;
 public class Bed : MonoBehaviour {
 
     bool e;
-    bool q;
 
     bool touching;
     
@@ -33,7 +32,6 @@ public class Bed : MonoBehaviour {
     void Update ()
     {
 		if (Input.GetKeyDown("e")) { e = true; } else { e = false; }
-        if (Input.GetKeyDown("q")) { q = true; } else { q = false; }
 
         if (touching && e && !Mvmt.instance.dreaming)
         {
@@ -46,7 +44,7 @@ public class Bed : MonoBehaviour {
             Mvmt.instance.dreaming = true;
             Mvmt.instance.awake = location;
 
-            Tutorial.instance.dreaming = true;
+            //Tutorial.instance.dreaming = true;
         }
 	}
 }
