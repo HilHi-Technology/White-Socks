@@ -27,6 +27,8 @@ public class Bed_Final : MonoBehaviour {
 
     void TimeWait()
     {
+        //ClipboardController.instance.playAnim = true;
+
         SceneManager.LoadScene(nextRoom.name);
     }
 
@@ -40,7 +42,7 @@ public class Bed_Final : MonoBehaviour {
             GameObject.Find("Bob (Player)").GetComponent<SpriteRenderer>().enabled = false;
             GameObject.Find("Bob (Player)").GetComponent<Mvmt>().enabled = false;
 
-            Invoke("TimeWait", 2);
+            Invoke("TimeWait", 1);
         }
     }
 }

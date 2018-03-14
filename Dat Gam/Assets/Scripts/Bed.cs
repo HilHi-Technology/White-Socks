@@ -35,6 +35,9 @@ public class Bed : MonoBehaviour {
 
         if (touching && e && !Mvmt.instance.dreaming)
         {
+            ClipboardController.instance.FadeToBlack(0.2f);
+            ClipboardController.instance.FadeFromBlack(0.2f);
+
             Mvmt.instance.sleep = Instantiate(sleeping, transform.position, transform.rotation);
 
             playerAnim.speed = 1;
@@ -43,8 +46,6 @@ public class Bed : MonoBehaviour {
 
             Mvmt.instance.dreaming = true;
             Mvmt.instance.awake = location;
-
-            //Tutorial.instance.dreaming = true;
         }
 	}
 }

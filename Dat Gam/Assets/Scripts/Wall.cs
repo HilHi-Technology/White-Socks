@@ -15,6 +15,11 @@ public class Wall : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         coll = GetComponent<BoxCollider2D>();
+
+        if (impermeable)
+        {
+            anim.SetBool("Impermeable", true);
+        }
     }
 
 
@@ -29,16 +34,13 @@ public class Wall : MonoBehaviour
 
             if (!chanced)
             {
-                /*if (Random.Range(0, 10) == 9)
+                anim.SetInteger("Toggled", 1);
+
+                if (Random.Range(0, 4) == 0)
                 {
                     anim.SetTrigger("Chance");
                 }
-                else
-                {*/
-                    anim.SetInteger("Toggled", 1);
-                //}
-
-                //chanced = true;
+                chanced = true;
             }
         }
         else

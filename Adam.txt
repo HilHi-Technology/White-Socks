@@ -9,3 +9,6 @@ git pull
 //Force a git pull
 git fetch --all
 git reset --hard origin
+
+//Turn off "LF to CRLF" error
+git config core.autocrlf false
