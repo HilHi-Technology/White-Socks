@@ -3064,9 +3064,33 @@ Prefab:
       propertyPath: floor
       value: 
       objectReference: {fileID: 516096472}
+    - target: {fileID: 114444227319703588, guid: a3d4cc40f5289034393f656d2b507675,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3d4cc40f5289034393f656d2b507675, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1067306020 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1361136499228182, guid: a3d4cc40f5289034393f656d2b507675,
+    type: 2}
+  m_PrefabInternal: {fileID: 1067306019}
+--- !u!114 &1067306021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1067306020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cedbd1f67ca10e4f9aec6931a42af84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faderImage: {fileID: 0}
+  fade: 0
+  fadeAmount: 0.01
 --- !u!1001 &1074488943
 Prefab:
   m_ObjectHideFlags: 0

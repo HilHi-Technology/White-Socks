@@ -35,8 +35,8 @@ public class Bed : MonoBehaviour {
 
         if (touching && e && !Mvmt.instance.dreaming)
         {
-            ClipboardController.instance.FadeToBlack(0.02f);
-            ClipboardController.instance.FadeFromBlack(0.02f);
+            GameObject.Find("Clipboard").GetComponent<ClipboardTest>().fade = true;
+
 
             Mvmt.instance.sleep = Instantiate(sleeping, transform.position, transform.rotation);
 

@@ -8,7 +8,6 @@ public class ClipboardController : MonoBehaviour {
     public Object nextRoom;
 
     Animator anim;
-    Animation animate;
     SpriteRenderer sprite;
     SpriteRenderer blackScreen;
 
@@ -43,7 +42,7 @@ public class ClipboardController : MonoBehaviour {
         anim.Play(0);
         anim.speed = 1;
 
-        //while (animate["Clipboard_Flip"].normalizedTime != 1f)
+        //while (anim["Clipboard_Flip"].normalizedTime != 1f)
         //{
         //    yield return null;
         //}
@@ -71,10 +70,6 @@ public class ClipboardController : MonoBehaviour {
         }
 
         blackScreen.color = new Color(1f, 1f, 1f, 1f);
-
-
-
-
     }
     public void FadeFromBlack(float rate)
     {
