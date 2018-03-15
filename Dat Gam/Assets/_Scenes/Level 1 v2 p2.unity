@@ -3528,7 +3528,7 @@ Prefab:
         type: 2}
       propertyPath: nextRoom
       value: 
-      objectReference: {fileID: 102900000, guid: 851c5459aa4be0c43ad53365125ee30e,
+      objectReference: {fileID: 102900000, guid: 40e6ab60109099248aa1c10906b23324,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 68b2ba15feb75644ba4b90c0aa12761e, type: 2}

@@ -35,8 +35,8 @@ public class Bed : MonoBehaviour {
 
         if (touching && e && !Mvmt.instance.dreaming)
         {
-            ClipboardController.instance.FadeToBlack(0.2f);
-            ClipboardController.instance.FadeFromBlack(0.2f);
+            ClipboardController.instance.FadeToBlack(0.02f);
+            ClipboardController.instance.FadeFromBlack(0.02f);
 
             Mvmt.instance.sleep = Instantiate(sleeping, transform.position, transform.rotation);
 
