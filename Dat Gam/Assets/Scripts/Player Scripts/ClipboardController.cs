@@ -9,12 +9,10 @@ public class ClipboardController : MonoBehaviour {
 
     Animator anim;
     SpriteRenderer sprite;
-    SpriteRenderer blackScreen;
-
-    public bool playAnim = false;
+    
     public static ClipboardController instance;
 
-        float fadeDir = -1.0f;
+    float fadeDir = -1.0f;
 
 	void Start ()
     {
@@ -22,39 +20,22 @@ public class ClipboardController : MonoBehaviour {
         sprite.enabled = false;
         instance = this;
         anim = GetComponent<Animator>();
-        anim.speed = 0;
-        blackScreen = GameObject.Find("BlackScreen").GetComponent<SpriteRenderer>();
     }
 
 	void Update ()
     {
-		if (playAnim)
-        {
-            StartCoroutine(play());
-
-            playAnim = false;
-        }
 	}
 
-    IEnumerator play()
+    public void playAnim()
     {
-        sprite.enabled = true;
-        anim.Play(0);
-        anim.speed = 1;
+        //sprite.enabled = true;
+        //anim.SetTrigger("playAnim");
 
-        //while (anim["Clipboard_Flip"].normalizedTime != 1f)
-        //{
-        //    yield return null;
-        //}
-
-        FadeToBlack(0.05f);
+        //new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
 
         SceneManager.LoadScene(nextRoom.name);
-
-        yield return null;
     }
-
-
+    /*
     public void FadeToBlack(float rate)
     {
         blackScreen.enabled = true;
@@ -88,18 +69,5 @@ public class ClipboardController : MonoBehaviour {
 
         blackScreen.color = new Color(1f, 1f, 1f, 0f);
         blackScreen.enabled = false;
-    }
-
-    /*void OnGUI()
-    {
-
-            opacity += fadeDir * rate * Time.deltaTime;
-            opacity = Mathf.Clamp01(alpha);
-
-            GUI.color.a = alpha;
-
-            GUI.depth = drawDepth;
-
-            GUI.DrawTexture(Rect(0, 0, Screen.width, Screen.height), fadeTexture);
     }*/
 }

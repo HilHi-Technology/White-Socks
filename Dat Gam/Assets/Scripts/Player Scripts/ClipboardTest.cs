@@ -8,10 +8,12 @@ public class ClipboardTest : MonoBehaviour {
     public Image faderImage;
     public bool fade;
     public float fadeAmount = 5f;
-    
+    Color c;
+    /*
 	void Start ()
     {
         fade = false;
+        c = faderImage.color;
 	}
 	
 	void Update ()
@@ -28,10 +30,10 @@ public class ClipboardTest : MonoBehaviour {
 
     public void fadeIn()
     {
+        Debug.Log(c.a);
         if(faderImage.material.color.a < 255)
         {
-            Color c = faderImage.color;
-            c.a += fadeAmount * Time.deltaTime;
+            c.a += fadeAmount;
             faderImage.color = c;
         }
         else
@@ -43,9 +45,8 @@ public class ClipboardTest : MonoBehaviour {
     {
         if (faderImage.material.color.a > 0)
         {
-            Color c = faderImage.color;
-            c.a -= fadeAmount * Time.deltaTime;
+            c.a -= fadeAmount;
             faderImage.color = c;
         }
-    }
+    }*/
 }

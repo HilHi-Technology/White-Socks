@@ -10,7 +10,7 @@ public class Bed_Final : MonoBehaviour {
 
     public GameObject sleeping;
 
-    public Object nextRoom;
+    //public Object nextRoom;
 
     void Start()
     {
@@ -25,11 +25,11 @@ public class Bed_Final : MonoBehaviour {
         touching = false;
     }
 
-    void TimeWait()
+    void nextRoom()
     {
-        //ClipboardController.instance.playAnim = true;
+        ClipboardController.instance.playAnim();
 
-        SceneManager.LoadScene(nextRoom.name);
+        //SceneManager.LoadScene(nextRoom.name);
     }
 
     void Update()
@@ -42,7 +42,7 @@ public class Bed_Final : MonoBehaviour {
             GameObject.Find("Bob (Player)").GetComponent<SpriteRenderer>().enabled = false;
             GameObject.Find("Bob (Player)").GetComponent<Mvmt>().enabled = false;
 
-            Invoke("TimeWait", 1);
+            Invoke("nextRoom", 0.3f);
         }
     }
 }
