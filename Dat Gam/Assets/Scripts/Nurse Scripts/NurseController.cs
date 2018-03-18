@@ -37,7 +37,7 @@ public class NurseController : MonoBehaviour {
         move();
         updateAnim();
 
-        if (Vector3.Distance(transform.position, player.transform.position) < .3)
+        if (Vector3.Distance(transform.position, player.transform.position) < .2)
         {
             if (!Mvmt.instance.dreaming)
             {

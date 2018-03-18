@@ -20,7 +20,7 @@ public class Mvmt : MonoBehaviour {
     Animator anim;
     Rigidbody2D rb;
 
-    public GameObject floor;
+    public List<GameObject> floor;
 
     void Awake()
     {
@@ -67,7 +67,10 @@ public class Mvmt : MonoBehaviour {
 
         if (dreaming)
         {
-            floor.GetComponent<Animator>().SetInteger("Toggled", 1);
+            for (int j = 0; j < floor.Count; j++)
+            {
+                floor[j].GetComponent<Animator>().SetInteger("Toggled", 1);
+            }
         }
 
         rb.velocity = new Vector2(x * speed, y * speed);        //Move
@@ -82,7 +85,10 @@ public class Mvmt : MonoBehaviour {
         anim.SetBool("Dreaming", dreaming);
         anim.speed = 0;
 
-        floor.GetComponent<Animator>().SetInteger("Toggled", -1);
+        for (int j = 0; j < floor.Count; j++)
+        {
+            floor[j].GetComponent<Animator>().SetInteger("Toggled", -1);
+        }
 
         Destroy(sleep);
     }

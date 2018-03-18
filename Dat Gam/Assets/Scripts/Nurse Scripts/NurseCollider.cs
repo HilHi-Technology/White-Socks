@@ -10,9 +10,15 @@ public class NurseCollider : MonoBehaviour {
 
     public Object room;
 
+    PolygonCollider2D polyColl;
+    CapsuleCollider2D capsColl;
+
     void Start ()
     {
 		instance = this;
+
+        polyColl = GetComponent<PolygonCollider2D>();
+        capsColl = GetComponent<CapsuleCollider2D>();
 	}
 	
 	void Update ()
@@ -24,6 +30,8 @@ public class NurseCollider : MonoBehaviour {
         if (collision.tag == "Player")
         {
             sighted = true;
+            polyColl.enabled = false;
+            capsColl.enabled = true;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -31,6 +39,8 @@ public class NurseCollider : MonoBehaviour {
         if (collision.tag == "Player")
         {
             sighted = false;
+            capsColl.enabled = false;
+            polyColl.enabled = true;
         }
     }
 }

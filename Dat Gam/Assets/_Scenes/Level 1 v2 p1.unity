@@ -161,7 +161,7 @@ Prefab:
         type: 2}
       propertyPath: floor
       value: 
-      objectReference: {fileID: 373030369}
+      objectReference: {fileID: 0}
     - target: {fileID: 114281800402768456, guid: a3d4cc40f5289034393f656d2b507675,
         type: 2}
       propertyPath: activators.Array.data[0].door
@@ -182,6 +182,17 @@ Prefab:
       propertyPath: activators.Array.data[1].switches.Array.data[0]
       value: 
       objectReference: {fileID: 336733368}
+    - target: {fileID: 114667916041457570, guid: a3d4cc40f5289034393f656d2b507675,
+        type: 2}
+      propertyPath: floor.Array.data[0]
+      value: 
+      objectReference: {fileID: 373030369}
+    - target: {fileID: 114843273598144418, guid: a3d4cc40f5289034393f656d2b507675,
+        type: 2}
+      propertyPath: nextRoom
+      value: 
+      objectReference: {fileID: 102900000, guid: b4ab5bf6159b08a4780b0ae12867136a,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3d4cc40f5289034393f656d2b507675, type: 2}
   m_IsPrefabParent: 0
@@ -931,7 +942,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &363240511
 MonoBehaviour:
   m_ObjectHideFlags: 0
