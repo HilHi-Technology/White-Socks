@@ -295,8 +295,7 @@
     <Compile Include="Assets\Scripts\Player Scripts\Mvmt.cs" />
     <Compile Include="Assets\Scripts\Toggled_Object.cs" />
     <Compile Include="Assets\Scripts\Tutorial Scripts\Bed_Tut.cs" />
-    <Compile Include="Assets\Scripts\Tutorial Scripts\Lever1_Tut.cs" />
-    <Compile Include="Assets\Scripts\Tutorial Scripts\Lever2_Tut.cs" />
+    <Compile Include="Assets\Scripts\Tutorial Scripts\Lever_Tut.cs" />
     <Compile Include="Assets\Scripts\Tutorial Scripts\Tutorial.cs" />
     <Compile Include="Assets\Scripts\Wall.cs" />
   </ItemGroup>

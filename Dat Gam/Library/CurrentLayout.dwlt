@@ -110,7 +110,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 137
+  controlID: 140
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 442}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 29
+  controlID: 49
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -181,8 +181,8 @@ MonoBehaviour:
     y: 361
     width: 591
     height: 226
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -231,8 +231,8 @@ MonoBehaviour:
     y: 0
     width: 315
     height: 280
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -394,14 +394,14 @@ MonoBehaviour:
     height: 340
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 3977.697903778722
+  lastFramingTime: 3220.249006635493
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.8061378, y: 0.8778196, z: 0.12614352}
+    m_Target: {x: 2.5332568, y: 0.34564206, z: 0.002134109}
     speed: 2
-    m_Value: {x: 2.8061378, y: 0.8778196, z: 0.12614352}
+    m_Value: {x: 2.5332568, y: 0.34564206, z: 0.002134109}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -429,9 +429,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1.767195
+    m_Target: 3.395135
     speed: 2
-    m_Value: 1.767195
+    m_Value: 3.395135
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -787,9 +787,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 00dcffff98e8ffff9ae8ffff12f3ffff00000000243200003a3200005c320000c43200004c330000
+    m_SelectedIDs: 66f6feff
+    m_LastClickedID: -67994
+    m_ExpandedIDs: 54f6feff1af9feff743bffff7846ffff104fffff5a54ffff2057ffff3a64ffffa865ffff5e76ffff22b0ffff06b8ffff00c0ffff34cbffff9cfbffff9efbffff00000000302b0000422b0000642b0000862b0000d82b0000102c00006c2c0000bc64000006670000128200004282000034830000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -860,10 +860,10 @@ MonoBehaviour:
   m_LastProjectPath: C:\Users\inteluser\Desktop\Github\White-Socks\Dat Gam
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 179}
-    m_SelectedIDs: 74750000
-    m_LastClickedID: 30068
-    m_ExpandedIDs: 000000005c2d0000622d0000222e0000262e0000902e0000cc2e0000f6310000ffffff7f
+    scrollPos: {x: 0, y: 183}
+    m_SelectedIDs: 102a0000
+    m_LastClickedID: 10768
+    m_ExpandedIDs: 00000000982700009e2700004029000044290000f22900007a2a0000ee2d0000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -891,7 +891,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005c2d0000622d0000222e0000262e0000902e0000cc2e0000f6310000
+    m_ExpandedIDs: 00000000982700009e2700004029000044290000f22900007a2a0000ee2d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

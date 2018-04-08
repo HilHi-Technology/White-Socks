@@ -4,12 +4,24 @@ using UnityEngine;
 
 public class Bed_Tut : MonoBehaviour {
 
+    public int bed;
 
 	void Update ()
     {
-        if (GameObject.Find("Bob (Player)").GetComponent<Mvmt>().dreaming)
+        if (bed == 1)
+           {
+            if (GameObject.Find("Bob (Player)").GetComponent<Mvmt>().dreaming)
+            {
+                GameObject.Find("Tutorial").GetComponent<Tutorial>().lever2 = true;
+            }
+        }
+        
+        if (bed == 2)
         {
-            GameObject.Find("Tutorial").GetComponent<Tutorial>().lever2 = true;
+            if (GameObject.Find("Bob (Player)").GetComponent<Mvmt>().dreaming)
+            {
+                GameObject.Find("Tutorial").GetComponent<Tutorial>().monster = true;
+            }
         }
     }
 }
