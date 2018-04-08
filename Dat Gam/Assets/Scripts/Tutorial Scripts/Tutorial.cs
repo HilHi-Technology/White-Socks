@@ -110,7 +110,7 @@ public class Tutorial : MonoBehaviour {
         }
     }
 
-    private void clearScreen()
+    public void clearScreen()
     {
         image.enabled = false;
         tutorialText.text = "";

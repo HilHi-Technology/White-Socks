@@ -27,7 +27,7 @@ public class Bed_Final : MonoBehaviour {
 
     void nextRoom()
     {
-        ClipboardController.instance.playAnim();
+        ClipboardController.instance.play = true;
 
         //SceneManager.LoadScene(nextRoom.name);
     }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class ClipboardController : MonoBehaviour {
@@ -12,7 +13,9 @@ public class ClipboardController : MonoBehaviour {
     
     public static ClipboardController instance;
 
-    float fadeDir = -1.0f;
+    public bool play = false;
+    bool animStarted = false;
+    public bool animEnded = false;
 
 	void Start ()
     {
@@ -24,50 +27,36 @@ public class ClipboardController : MonoBehaviour {
 
 	void Update ()
     {
+        if (play)
+        {
+            if (playAnim())
+            {
+                SceneManager.LoadScene(nextRoom.name);
+            }
+        }
 	}
 
-    public void playAnim()
+    public bool playAnim()
     {
-        //sprite.enabled = true;
-        //anim.SetTrigger("playAnim");
-
-        //new WaitForSeconds(anim.GetCurrentAnimatorStateInfo(0).length);
-
-        SceneManager.LoadScene(nextRoom.name);
-    }
-    /*
-    public void FadeToBlack(float rate)
-    {
-        blackScreen.enabled = true;
-        blackScreen.color = new Color(1f, 1f, 1f, 0f);
-
-        float opacity = 0;
-        while (opacity < 1)
+        if (!animStarted)
         {
-            //opacity += rate * Time.deltaTime;
-            opacity += 1f * rate * Time.deltaTime;
-            opacity = Mathf.Clamp01(opacity);
-            blackScreen.color = new Color(1f, 1f, 1f, opacity);
+            //GameObject.Find("Tutorial").GetComponent<Tutorial>().clearScreen();
+            sprite.enabled = true;
+            anim.enabled = true;
+            anim.SetTrigger("playAnim");
+            animStarted = true;
         }
-
-        blackScreen.color = new Color(1f, 1f, 1f, 1f);
-    }
-    public void FadeFromBlack(float rate)
-    {
-        blackScreen.enabled = true;
-        blackScreen.color = new Color(1f, 1f, 1f, 1f);
-
-        float opacity = 1;
-        while (opacity > 0)
+        if (animEnded)
         {
-            //opacity -= rate * Time.deltaTime;
-            opacity += -1f * rate * Time.deltaTime;
-            opacity = Mathf.Clamp01(opacity);
-
-            blackScreen.color = new Color(1f, 1f, 1f, opacity);
+            return true;
         }
-
-        blackScreen.color = new Color(1f, 1f, 1f, 0f);
-        blackScreen.enabled = false;
-    }*/
+        else
+        {
+            return false;
+        }
+    }
+    public void animEnd()
+    {
+        animEnded = true;
+    }
 }
