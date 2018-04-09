@@ -35,9 +35,7 @@ public class Bed : MonoBehaviour {
 
         if (touching && e && !Mvmt.instance.dreaming)
         {
-            GameObject.Find("Clipboard").GetComponent<ClipboardTest>().fade = true;
-
-
+            //GameObject.Find("BlackScreen").GetComponent<Fader>().fadeInOut(2);
             Mvmt.instance.sleep = Instantiate(sleeping, transform.position, transform.rotation);
 
             playerAnim.speed = 1;

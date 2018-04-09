@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Mvmt : MonoBehaviour {
 
+    public bool cheats;
+
     public float moveSpeed;
     float speed;
 
@@ -27,6 +29,7 @@ public class Mvmt : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         instance = this;
+        speed = moveSpeed;
     }
 
     void Update()
@@ -34,8 +37,9 @@ public class Mvmt : MonoBehaviour {
         x = Input.GetAxis("Horizontal");        //Get user inputs
         y = Input.GetAxis("Vertical");
         if (Input.GetKeyDown("q")) { q = true; } else { q = false; }
-        if (Input.GetKey(KeyCode.LeftShift)) { speed = 2; } else { speed = moveSpeed; }
-        
+
+        if (cheats) { cheat(); }
+
         if (dreaming && q)
         {
             awaken();
@@ -91,5 +95,13 @@ public class Mvmt : MonoBehaviour {
         }
 
         Destroy(sleep);
+    }
+
+    private void cheat()
+    {
+        if (Input.GetKey(KeyCode.LeftShift)) { speed = 2; } else { speed = moveSpeed; }
+
+        if (Input.GetKeyDown("n")) { GameObject.Find("BlackScreen").GetComponent<Fader>().fadeIn(1); }
+        if (Input.GetKeyDown("m")) { GameObject.Find("BlackScreen").GetComponent<Fader>().fadeOut(1); }
     }
 }

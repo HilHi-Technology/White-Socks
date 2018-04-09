@@ -177,6 +177,11 @@ Prefab:
       propertyPath: floor.Array.data[0]
       value: 
       objectReference: {fileID: 373030369}
+    - target: {fileID: 114667916041457570, guid: a3d4cc40f5289034393f656d2b507675,
+        type: 2}
+      propertyPath: cheats
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3d4cc40f5289034393f656d2b507675, type: 2}
   m_IsPrefabParent: 0
@@ -1351,39 +1356,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 72f9da9c9d5d157429f7226ae7022e28, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &549784026 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1825446533031166, guid: 06df4d38bdc8be24fb65065de3c1049e,
-    type: 2}
-  m_PrefabInternal: {fileID: 1652262447}
---- !u!114 &549784027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 549784026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e4367844ce9a834faf7fce5d2f74565, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!95 &549784028
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 549784026}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 62a626f6cb50616489b528252e498788, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!4 &552160879 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4005851799828212, guid: 72f9da9c9d5d157429f7226ae7022e28,
@@ -4040,24 +4012,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1825446533031166, guid: 06df4d38bdc8be24fb65065de3c1049e, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224036386880674718, guid: 06df4d38bdc8be24fb65065de3c1049e,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 700
-      objectReference: {fileID: 0}
-    - target: {fileID: 224036386880674718, guid: 06df4d38bdc8be24fb65065de3c1049e,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 114809514314635822, guid: 06df4d38bdc8be24fb65065de3c1049e,
+    - target: {fileID: 114755139881688432, guid: 06df4d38bdc8be24fb65065de3c1049e,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06df4d38bdc8be24fb65065de3c1049e, type: 2}

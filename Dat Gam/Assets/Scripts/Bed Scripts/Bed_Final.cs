@@ -10,8 +10,6 @@ public class Bed_Final : MonoBehaviour {
 
     public GameObject sleeping;
 
-    //public Object nextRoom;
-
     void Start()
     {
     }
@@ -27,9 +25,9 @@ public class Bed_Final : MonoBehaviour {
 
     void nextRoom()
     {
-        ClipboardController.instance.play = true;
+        //new WaitUntil((() => GameObject.Find("BlackScreen").GetComponent<Fader>().fadeIn(2)));
 
-        //SceneManager.LoadScene(nextRoom.name);
+        ClipboardController.instance.play = true;
     }
 
     void Update()
