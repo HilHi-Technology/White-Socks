@@ -13,7 +13,7 @@ public class Toggled_Object : MonoBehaviour
 
     bool touching;
     bool e;
-
+    
     public float delay;
 
     Animator anim;
@@ -36,7 +36,6 @@ public class Toggled_Object : MonoBehaviour
     void TimeWait()
     {
         pressed = -pressed;
-        anim.SetInteger("Pressed", pressed);
     }
 
     void Update()
@@ -48,11 +47,16 @@ public class Toggled_Object : MonoBehaviour
             if ((toggled_when == 2 && Mvmt.instance.dreaming) || (toggled_when == 1 && !Mvmt.instance.dreaming) || (toggled_when == 0))
             {
                 pressed = -pressed;
-                anim.SetInteger("Pressed", pressed);
 
                 if (delay != 0)
                 {
+                    anim.SetTrigger("Pressed");
+                    anim.speed = (1 / delay);
                     Invoke("TimeWait", delay);
+                }
+                else
+                {
+                    anim.SetInteger("Pressed", pressed);
                 }
             }
         }

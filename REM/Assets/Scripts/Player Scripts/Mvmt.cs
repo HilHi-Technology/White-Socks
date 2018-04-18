@@ -103,5 +103,7 @@ public class Mvmt : MonoBehaviour {
 
         if (Input.GetKeyDown("n")) { GameObject.Find("BlackScreen").GetComponent<Fader>().fadeIn(1); }
         if (Input.GetKeyDown("m")) { GameObject.Find("BlackScreen").GetComponent<Fader>().fadeOut(1); }
+
+        if (Input.GetKeyDown("b")) { dreaming = true; awake = transform.position; }
     }
 }
