@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 20763905224167160}
   - component: {fileID: 124023811816243260}
   - component: {fileID: 81978305366104324}
-  - component: {fileID: 114365338493375258}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -215,7 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activators:
   - door: {fileID: 0}
-    impermeable: 0
+    impermeable: 1
     switches:
     - {fileID: 0}
   - door: {fileID: 0}
@@ -223,19 +222,6 @@ MonoBehaviour:
     switches:
     - {fileID: 0}
   InteractKey: 101
---- !u!114 &114365338493375258
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1082110002805588}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ba428d10f7df89449ca960eeb84d9c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1370972776353928}
-  offset: {x: 0, y: 0, z: 0}
 --- !u!114 &114667916041457570
 MonoBehaviour:
   m_ObjectHideFlags: 1

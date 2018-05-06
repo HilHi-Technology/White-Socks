@@ -531,71 +531,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114841744233260020, guid: 06df4d38bdc8be24fb65065de3c1049e,
-        type: 2}
-      propertyPath: m_FontData.m_MaxSize
-      value: 60
-      objectReference: {fileID: 0}
-    - target: {fileID: 114841744233260020, guid: 06df4d38bdc8be24fb65065de3c1049e,
-        type: 2}
-      propertyPath: m_FontData.m_AlignByGeometry
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114016717761121672, guid: 06df4d38bdc8be24fb65065de3c1049e,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114841744233260020, guid: 06df4d38bdc8be24fb65065de3c1049e,
-        type: 2}
-      propertyPath: m_Text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 114841744233260020, guid: 06df4d38bdc8be24fb65065de3c1049e,
-        type: 2}
-      propertyPath: m_FontData.m_MinSize
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224685427476449684, guid: 06df4d38bdc8be24fb65065de3c1049e,
-        type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224685427476449684, guid: 06df4d38bdc8be24fb65065de3c1049e,
-        type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224685427476449684, guid: 06df4d38bdc8be24fb65065de3c1049e,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.000015259
-      objectReference: {fileID: 0}
-    - target: {fileID: 224685427476449684, guid: 06df4d38bdc8be24fb65065de3c1049e,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.0000076294
-      objectReference: {fileID: 0}
-    - target: {fileID: 224685427476449684, guid: 06df4d38bdc8be24fb65065de3c1049e,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0.000030518
-      objectReference: {fileID: 0}
-    - target: {fileID: 224685427476449684, guid: 06df4d38bdc8be24fb65065de3c1049e,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0.000015259
-      objectReference: {fileID: 0}
-    - target: {fileID: 114841744233260020, guid: 06df4d38bdc8be24fb65065de3c1049e,
-        type: 2}
-      propertyPath: m_FontData.m_FontSize
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 114841744233260020, guid: 06df4d38bdc8be24fb65065de3c1049e,
-        type: 2}
-      propertyPath: m_FontData.m_LineSpacing
-      value: 0.9
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06df4d38bdc8be24fb65065de3c1049e, type: 2}
   m_IsPrefabParent: 0
@@ -4234,6 +4169,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114667916041457570, guid: a3d4cc40f5289034393f656d2b507675,
+        type: 2}
+      propertyPath: floor.Array.data[0]
+      value: 
+      objectReference: {fileID: 373030369}
     - target: {fileID: 114281800402768456, guid: a3d4cc40f5289034393f656d2b507675,
         type: 2}
       propertyPath: activators.Array.data[0].door
@@ -4254,18 +4194,7 @@ Prefab:
       propertyPath: activators.Array.data[1].switches.Array.data[0]
       value: 
       objectReference: {fileID: 336733368}
-    - target: {fileID: 114667916041457570, guid: a3d4cc40f5289034393f656d2b507675,
-        type: 2}
-      propertyPath: floor.Array.data[0]
-      value: 
-      objectReference: {fileID: 373030369}
-    - target: {fileID: 114281800402768456, guid: a3d4cc40f5289034393f656d2b507675,
-        type: 2}
-      propertyPath: activators.Array.data[0].impermeable
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114365338493375258, guid: a3d4cc40f5289034393f656d2b507675, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3d4cc40f5289034393f656d2b507675, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1808957740 stripped
