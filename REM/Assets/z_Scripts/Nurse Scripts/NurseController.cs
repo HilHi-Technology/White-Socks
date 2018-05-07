@@ -9,6 +9,13 @@ public class NurseController : MonoBehaviour {
     public float range;
     public float errorMargin;
     public Object room;
+    
+    Vector3 target;
+    GameObject player;
+    Animator anim;
+    public GameObject coll;
+    Transform coll_tran;
+
     public List<Vector3> pathway;
     int location = 0;
     int total = 0;
@@ -16,11 +23,6 @@ public class NurseController : MonoBehaviour {
     float x;
     float y;
     bool sighted;
-    
-    Vector3 target;
-    GameObject player;
-    Animator anim;
-    Transform coll;
 
     void Start ()
     {
@@ -28,7 +30,7 @@ public class NurseController : MonoBehaviour {
         target = pathway[1];
         anim = GetComponent<Animator>();
         player = GameObject.Find("Bob (Player)");
-        coll = GameObject.Find("Nurse_coll").GetComponent<Transform>();
+        coll_tran = coll.GetComponent<Transform>();
     }
 
     void Update ()
@@ -76,13 +78,13 @@ public class NurseController : MonoBehaviour {
         anim.SetInteger("y", Mathf.RoundToInt(y));
         if (ver)
         {
-            if (y == 1) { coll.rotation = Quaternion.Euler(0, 0, 180); }
-            if (y == -1) { coll.rotation = Quaternion.Euler(0, 0, 0); }
+            if (y == 1) { coll_tran.rotation = Quaternion.Euler(0, 0, 180); }
+            if (y == -1) { coll_tran.rotation = Quaternion.Euler(0, 0, 0); }
         }
         else
         {
-            if (x == 1) { coll.rotation = Quaternion.Euler(0, 0, 90); }
-            if (x == -1) { coll.rotation = Quaternion.Euler(0, 0, 270); }
+            if (x == 1) { coll_tran.rotation = Quaternion.Euler(0, 0, 90); }
+            if (x == -1) { coll_tran.rotation = Quaternion.Euler(0, 0, 270); }
         }
 
         if (Mvmt.instance.dreaming) { anim.SetBool("Dreaming", true); } else { anim.SetBool("Dreaming", false); }
