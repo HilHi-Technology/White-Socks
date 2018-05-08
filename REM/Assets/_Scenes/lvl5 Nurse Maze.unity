@@ -2688,7 +2688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fef9994b6e8f2d846ae6d6953022317f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextRoom: {fileID: 102900000, guid: eed8b857650332a46a9d70d047df26f9, type: 3}
+  nextRoom: {fileID: 0}
   clipboardText: {fileID: 853681455}
   play: 0
   animEnded: 0
@@ -5576,11 +5576,11 @@ Transform:
   - {fileID: 817312012}
   - {fileID: 1083055109}
   - {fileID: 1657650789}
-  - {fileID: 1543701864}
   - {fileID: 1428090855}
   - {fileID: 128904419}
   - {fileID: 682809412}
   - {fileID: 281638912}
+  - {fileID: 1543701864}
   - {fileID: 305666909}
   - {fileID: 38790097}
   - {fileID: 368420572}
@@ -5588,19 +5588,19 @@ Transform:
   - {fileID: 2124275531}
   - {fileID: 1270584032}
   - {fileID: 1581381551}
+  - {fileID: 1584100864}
   - {fileID: 1663773323}
   - {fileID: 1718255414}
-  - {fileID: 1176156611}
   - {fileID: 132272553}
-  - {fileID: 1625644066}
   - {fileID: 337985096}
-  - {fileID: 1869511099}
-  - {fileID: 1584100864}
   - {fileID: 2054149308}
+  - {fileID: 1869511099}
+  - {fileID: 1176156611}
   - {fileID: 1121216439}
   - {fileID: 2015086672}
   - {fileID: 476216539}
   - {fileID: 237201147}
+  - {fileID: 1625644066}
   - {fileID: 1440413075}
   - {fileID: 629682868}
   - {fileID: 588654765}

@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.3.1f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -291,6 +293,7 @@
     <Compile Include="Assets\z_Scripts\Door Scripts\Door_Activator.cs" />
     <Compile Include="Assets\z_Scripts\Door Scripts\Door_Locked.cs" />
     <Compile Include="Assets\z_Scripts\Door Scripts\Door_Unlocked.cs" />
+    <Compile Include="Assets\z_Scripts\Door Scripts\Door_Gate.cs" />
     <Compile Include="Assets\z_Scripts\Fader.cs" />
     <Compile Include="Assets\z_Scripts\Nurse Scripts\NurseCollider.cs" />
     <Compile Include="Assets\z_Scripts\Nurse Scripts\NurseController.cs" />

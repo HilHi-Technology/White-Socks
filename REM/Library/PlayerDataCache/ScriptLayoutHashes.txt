@@ -1,7 +1,11 @@
 WindowsStandalone
 SceneListBegin?
-Assets/_Scenes/Level 1 v2 p1.unity
-Assets/_Scenes/Level 1 v2 p2.unity
+Assets/_Scenes/lvl1 Tutorial_1.unity
+Assets/_Scenes/lvl2 Generic Level.unity
+Assets/_Scenes/lvl3 Tutorial_2.unity
+Assets/_Scenes/lvl4 Labyrinth.unity
+Assets/_Scenes/lvl5 Nurse Maze.unity
+Assets/_Scenes/lvl6 Nurse_Chase.unity
 SceneListEnd?
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 dbc29a6f2739d277c10da432d73adb6d UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -15,7 +19,6 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-2b5bd81c259c691324a17af9a3e97e85 Assembly-CSharp.dll:.CameraController
 a35dc9cca2faebc5f5f1aeb9e8e47bbe UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 49cd62a578efc0a599b810a2b66cd49c UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -92,7 +95,7 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-a02788f3e63da56de30d759cd5f66e7e Assembly-CSharp.dll:.NurseController
+e67f7fe07ab15720c187f7b685173112 Assembly-CSharp.dll:.NurseController
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -107,6 +110,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Button_basic
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 74f67290c72b57bf6f6e81e344769900 Assembly-CSharp.dll:.Fader
 09ff6a2f5ecb85bcd20236a1f30b48fe Assembly-CSharp.dll:.Bed_Final
@@ -124,6 +128,7 @@ e96d274ba228cf353cfeb933229719a0 Assembly-CSharp.dll:.Toggled_Object
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Advertisements.dll:UnityEngine.Advertisements.Editor.Placeholder
 568e19c4abdb09d709196d45f3924a2a Assembly-CSharp.dll:.Mvmt
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Door_Unlocked
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.pause
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -138,7 +143,7 @@ e9bdabf9265d758d56f01bb188916fa8 UnityEngine.Networking.dll:UnityEngine.Networki
 3f32f08a64daf40b09ed864d96fe3840 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransform
 73843688b51256aed059f049c540bca8 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 528ea1fd7c01796fc60c4e2f172ea229 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
-8d33cb7bc797b0a8adffa714abd4d2ea Assembly-CSharp.dll:.Door_Locked
+b6834d9efa7454aaca27ee9c03c10154 Assembly-CSharp.dll:.Door_Locked
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.PlayModeRunnerCallback
 96d0fbde9fd209878a0a291f82c9bcdd UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.PlaymodeTestsController
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
@@ -156,3 +161,4 @@ f20c932691fcfa7c608a601acf17a969 Assembly-CSharp.dll:.Bed
 a04da5b8ae08558e7eb2b4fb2105747c Assembly-CSharp.dll:.Tutorial
 be302bd04416ad41feac73dedb26316a Assembly-CSharp.dll:.Door_Activator
 dfa5ca2cc13bc09b4f61af9146e14b82 Assembly-CSharp.dll:.Wall
+42a941134036315074fefe9fbbcb63c7 Assembly-CSharp.dll:.Door_Gate

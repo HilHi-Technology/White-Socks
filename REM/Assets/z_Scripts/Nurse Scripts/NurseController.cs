@@ -24,6 +24,8 @@ public class NurseController : MonoBehaviour {
     float y;
     bool sighted;
 
+    NurseCollider collScript;
+
     void Start ()
     {
         total = pathway.Count;
@@ -31,6 +33,7 @@ public class NurseController : MonoBehaviour {
         anim = GetComponent<Animator>();
         player = GameObject.Find("Bob (Player)");
         coll_tran = coll.GetComponent<Transform>();
+        collScript = coll.GetComponent<NurseCollider>();
     }
 
     void Update ()
@@ -61,7 +64,7 @@ public class NurseController : MonoBehaviour {
             if (location > total - 1) { location = 0; }
             target = pathway[location];
         }
-        if (!NurseCollider.instance.sighted) { target = pathway[location]; } else { target = player.transform.position; }
+        if (!collScript.sighted) { target = pathway[location]; } else { target = player.transform.position; }
 
         transform.position = Vector3.MoveTowards(transform.position, target, step);
     }
