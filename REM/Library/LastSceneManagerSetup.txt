@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/lvl2 Generic Level.unity
+- path: Assets/_Scenes/lvl4 Labyrinth.unity
   isLoaded: 1
   isActive: 1
