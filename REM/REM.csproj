@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.3.1f1</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -290,20 +288,22 @@
     <Compile Include="Assets\z_Scripts\Bed Scripts\Bed.cs" />
     <Compile Include="Assets\z_Scripts\Bed Scripts\Bed_Final.cs" />
     <Compile Include="Assets\z_Scripts\Button_basic.cs" />
+    <Compile Include="Assets\z_Scripts\ClipboardEgg.cs" />
     <Compile Include="Assets\z_Scripts\Door Scripts\Door_Activator.cs" />
+    <Compile Include="Assets\z_Scripts\Door Scripts\Door_Gate.cs" />
     <Compile Include="Assets\z_Scripts\Door Scripts\Door_Locked.cs" />
     <Compile Include="Assets\z_Scripts\Door Scripts\Door_Unlocked.cs" />
-    <Compile Include="Assets\z_Scripts\Door Scripts\Door_Gate.cs" />
-    <Compile Include="Assets\z_Scripts\Fader.cs" />
     <Compile Include="Assets\z_Scripts\Nurse Scripts\NurseCollider.cs" />
     <Compile Include="Assets\z_Scripts\Nurse Scripts\NurseController.cs" />
     <Compile Include="Assets\z_Scripts\pause.cs" />
-    <Compile Include="Assets\z_Scripts\Player Scripts\ClipboardController.cs" />
     <Compile Include="Assets\z_Scripts\Player Scripts\Mvmt.cs" />
     <Compile Include="Assets\z_Scripts\Toggled_Object.cs" />
     <Compile Include="Assets\z_Scripts\Tutorial Scripts\Bed_Tut.cs" />
     <Compile Include="Assets\z_Scripts\Tutorial Scripts\Lever_Tut.cs" />
     <Compile Include="Assets\z_Scripts\Tutorial Scripts\Tutorial.cs" />
+    <Compile Include="Assets\z_Scripts\UI Scripts\ClipboardController.cs" />
+    <Compile Include="Assets\z_Scripts\UI Scripts\Fader.cs" />
+    <Compile Include="Assets\z_Scripts\UI Scripts\TextBox.cs" />
     <Compile Include="Assets\z_Scripts\Wall.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

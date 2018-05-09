@@ -1,15 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Tutorial : MonoBehaviour {
-
-    Image image;
+    
     public int level;
-    public bool enterKey;
-
-    public Text tutorialText;
+    private TextBox text;
 
     //level = 1
     bool move = true;               bool move_true = false;
@@ -26,51 +22,48 @@ public class Tutorial : MonoBehaviour {
 
 	void Start ()
     {
-        image = GetComponent<Image>();
-        image.enabled = false;
-        tutorialText.text = "";
+        text = TextBox.instance;
     }
 	
 	void Update ()
     {
-        enterKey = (Input.GetKeyDown(KeyCode.Return));
 
         if (level == 1)
         {
             if (move && !move_true)
             {
-                bool end = print("Use the WASD keys to move \n <enter to continue> ");
-                if (end) { move_true = true; lever1 = true; }
+                bool end = text.print("Use the WASD keys to move \n ***Press enter when you have finished reading***");
+                if (end) { move_true = true; lever1 = true; end = false; }
             }
 
             if (lever1 && !lever1_true)
             {
-                bool end = print("Move to the lever, and press 'e' \n <enter to continue> ");
-                if (end) { lever1_true = true; }
+                bool end = text.print("Move to the lever, and press 'e' \n <enter to continue> ");
+                if (end) { lever1_true = true; end = false; }
             }
 
             if (bed && !bed_true)
             {
-                bool end = print("Now you can go through the door, and get to the bed. Press 'e' on the bed to sleep \n <enter to continue> ");
-                if (end) { bed_true = true; }
+                bool end = text.print("Now you can go through the door, and get to the bed. Press 'e' on the bed to sleep \n <enter to continue> ");
+                if (end) { bed_true = true; end = false; }
             }
 
             if (lever2 && !lever2_true)
             {
-                bool end = print("Now that you're asleep, you're dreaming! This allows you to walk through most walls\n <enter to continue> ");
-                if (end) { lever2p2 = true; lever2_true = true; }
+                bool end = text.print("Now that you're asleep, you're dreaming! This allows you to walk through most walls\n <enter to continue> ");
+                if (end) { lever2p2 = true; lever2_true = true; end = false; }
             }
 
             if (lever2p2 && !lever2p2_true)
             {
-                bool end = print("Maybe now you can reach the other lever \n <enter to continue> ");
-                if (end) { lever2p2_true = true; }
+                bool end = text.print("Maybe now you can reach the other lever \n <enter to continue> ");
+                if (end) { lever2p2_true = true; end = false; }
             }
 
             if (end && !end_true)
             {
-                bool end = print("Now the door's open. Press 'q' to wake up, and you can sleep in the end bed \n <enter to continue> ");
-                if (end) { end_true = true; }
+                bool end = text.print("Now the door's open. Press 'q' to wake up, and you can sleep in the end bed \n <enter to continue> ");
+                if (end) { end_true = true; end = false; }
             }
         }
 
@@ -78,41 +71,19 @@ public class Tutorial : MonoBehaviour {
         {
             if (nurse && !nurse_true)
             {
-                bool end = print("Do you hear that? Sounds like footsteps \n <enter to continue>");
-                if (end) { nurse_true = true; nurse2 = true; }
+                bool end = text.print("Do you hear that? Sounds like footsteps \n <enter to continue>");
+                if (end) { nurse_true = true; nurse2 = true; end = false; }
             }
             if (nurse2 && !nurse2_true)
             {
-                bool end = print("Maybe they put a guard on this hallway. Better be careful this time \n <enter to continue>");
-                if (end) { nurse2_true = true; }
+                bool end = text.print("Maybe they put a guard on this hallway. Better be careful this time \n <enter to continue>");
+                if (end) { nurse2_true = true; end = false; }
             }
             if (monster && !monster_true)
             {
-                bool end = print("Did you hear that snarl? There must be a monster in this dream \n <enter to continue>");
-                if (end) { monster_true = true; }
+                bool end = text.print("Did you hear that snarl? There must be a monster in this dream \n <enter to continue>");
+                if (end) { monster_true = true; end = false; }
             }
         }
-    }
-
-    private bool print(string message)
-    {
-        image.enabled = true;
-        tutorialText.text = message;
-        if (enterKey)
-        {
-            clearScreen();
-            enterKey = false;
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-
-    public void clearScreen()
-    {
-        image.enabled = false;
-        tutorialText.text = "";
     }
 }

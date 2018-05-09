@@ -58,9 +58,9 @@ GameObject:
   - component: {fileID: 224095948917069514}
   - component: {fileID: 222400115796618182}
   - component: {fileID: 114755139881688432}
-  - component: {fileID: 114612451980773574}
+  - component: {fileID: 114495759280208608}
   m_Layer: 0
-  m_Name: Tutorial
+  m_Name: TextBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 222900994360904692}
   - component: {fileID: 114500609909257144}
   m_Layer: 5
-  m_Name: tutorialText
+  m_Name: text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -212,10 +212,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fef9994b6e8f2d846ae6d6953022317f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextRoom: {fileID: 102900000, guid: b4ab5bf6159b08a4780b0ae12867136a, type: 3}
+  nextRoom: {fileID: 102900000, guid: d3071133fa9a3534996480101afd003d, type: 3}
   clipboardText: {fileID: 114841744233260020}
   play: 0
   animEnded: 0
+--- !u!114 &114495759280208608
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1336648981777404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb5633fbe9b2cdf4fa1375dfa918f21d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 114500609909257144}
 --- !u!114 &114500609909257144
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -277,24 +289,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeEnded: 1
---- !u!114 &114612451980773574
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1336648981777404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1c15b27db005fd442a1ad009f3779fc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  level: 1
-  enterKey: 0
-  tutorialText: {fileID: 114500609909257144}
-  bed: 0
-  lever2: 0
-  end: 0
-  monster: 0
 --- !u!114 &114755139881688432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -456,7 +450,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1336648981777404}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
