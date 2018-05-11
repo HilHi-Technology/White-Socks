@@ -5,8 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class ClipboardController : MonoBehaviour {
-
-    public Object nextRoom;
+    
+    public int nextRoom;
 
     Animator anim;
     Image sprite;
@@ -34,11 +34,11 @@ public class ClipboardController : MonoBehaviour {
         {
             if (playAnim())
             {
-                if (nextRoom != null)
+                if (nextRoom != -1)
                 {
                     if (print("Level completed!\n\n\n\n<enter to continue>"))
                     {
-                        SceneManager.LoadScene(nextRoom.name);
+                        changeToScene(nextRoom);
                     }
                 }
                 else
@@ -86,5 +86,10 @@ public class ClipboardController : MonoBehaviour {
     public void animEnd()
     {
         animEnded = true;
+    }
+
+    public void changeToScene(int scene)
+    {
+        SceneManager.LoadScene(scene);
     }
 }

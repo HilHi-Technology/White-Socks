@@ -9413,7 +9413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fef9994b6e8f2d846ae6d6953022317f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextRoom: {fileID: 102900000, guid: 8322194b4c7259c4da81c2e1c288d40b, type: 3}
+  nextRoom: 4
   clipboardText: {fileID: 316085125}
   play: 0
   animEnded: 0

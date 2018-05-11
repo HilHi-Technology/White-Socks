@@ -2860,7 +2860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fef9994b6e8f2d846ae6d6953022317f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextRoom: {fileID: 0}
+  nextRoom: -1
   clipboardText: {fileID: 853681455}
   play: 0
   animEnded: 0
@@ -6022,7 +6022,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1571297948
 MonoBehaviour:
   m_ObjectHideFlags: 0

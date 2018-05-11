@@ -5,8 +5,9 @@ Assets/_Scenes/lvl2 Generic Level.unity
 Assets/_Scenes/lvl3 Tutorial_2.unity
 Assets/_Scenes/lvl4 Labyrinth.unity
 Assets/_Scenes/lvl5 Nurse Maze.unity
-Assets/_Scenes/lvl6 Nurse_Chase.unity
+Assets/_Scenes/Unused/lvl6 Nurse_Chase.unity
 SceneListEnd?
+c30a52d6f84e35962d1058c286155615 Assembly-CSharp.dll:.ClipboardEgg
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 dbc29a6f2739d277c10da432d73adb6d UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -149,16 +150,17 @@ b6834d9efa7454aaca27ee9c03c10154 Assembly-CSharp.dll:.Door_Locked
 64eb32cc721b1cc68a91ed57461e188c UnityEngine.TestRunner.dll:UnityEngine.TestTools.TestRunner.Callbacks.RemoteTestResultSender
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
 e0f7ffd5d5c2abe4b2e16569a21163da UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioRoom
-a30ffcf63a826b32164487111d498c51 Assembly-CSharp.dll:.ClipboardController
+19f3bdbde9061b5e259eaad614590579 Assembly-CSharp.dll:.ClipboardController
+42a941134036315074fefe9fbbcb63c7 Assembly-CSharp.dll:.Door_Gate
 bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.AudioSpatializerMicrosoft
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInput
 463516d5b5fe8e67a0a24c48f2095b04 UnityEngine.HoloLens.dll:UnityEngine.EventSystems.HoloLensInputModule
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
+650c1e412dac0323d37ae3023565f947 Assembly-CSharp.dll:.TextBox
 f673d37b9d8331beac0e88b3651aa7ad Assembly-CSharp.dll:.Bed_Tut
 f20c932691fcfa7c608a601acf17a969 Assembly-CSharp.dll:.Bed
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-a04da5b8ae08558e7eb2b4fb2105747c Assembly-CSharp.dll:.Tutorial
+c4bcc64ff2622e3d3729a94e4c04d1e4 Assembly-CSharp.dll:.Tutorial
 be302bd04416ad41feac73dedb26316a Assembly-CSharp.dll:.Door_Activator
 dfa5ca2cc13bc09b4f61af9146e14b82 Assembly-CSharp.dll:.Wall
-42a941134036315074fefe9fbbcb63c7 Assembly-CSharp.dll:.Door_Gate
