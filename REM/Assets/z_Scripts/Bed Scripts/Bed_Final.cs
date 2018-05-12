@@ -4,15 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Bed_Final : MonoBehaviour {
-
-    bool e;
+    
     bool touching;
-
     public GameObject sleeping;
-
-    void Start()
-    {
-    }
+    public GameObject clipboard;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -32,9 +27,7 @@ public class Bed_Final : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetKeyDown("e")) { e = true; } else { e = false; }
-
-        if (touching && e && !Mvmt.instance.dreaming)
+        if (touching && Input.GetKeyDown("e") && !Mvmt.instance.dreaming)
         {
             GameObject bob = GameObject.Find("Bob (Player)");
             Instantiate(sleeping, transform.position, transform.rotation);

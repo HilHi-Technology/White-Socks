@@ -17,6 +17,8 @@ public class ClipboardController : MonoBehaviour {
     bool animStarted = false;
     public bool animEnded = false;
 
+    public bool turnOn = false;
+
 	void Start ()
     {
         sprite = GetComponent<Image>();
@@ -34,17 +36,8 @@ public class ClipboardController : MonoBehaviour {
         {
             if (playAnim())
             {
-                if (nextRoom != -1)
-                {
-                    if (print("Level completed!\n\n\n\n<enter to continue>"))
-                    {
-                        changeToScene(nextRoom);
-                    }
-                }
-                else
-                {
-                    print("You win!");
-                }
+                turnOn = true;
+                print("Level completed!");
             }
         }
 	}
@@ -53,7 +46,6 @@ public class ClipboardController : MonoBehaviour {
     {
         if (!animStarted)
         {
-            //GameObject.Find("Tutorial").GetComponent<Tutorial>().clearScreen();
             sprite.enabled = true;
             anim.enabled = true;
             anim.SetTrigger("playAnim");
@@ -69,18 +61,9 @@ public class ClipboardController : MonoBehaviour {
         }
     }
 
-    private bool print(string message)
+    private void print(string message)
     {
         clipboardText.text = message;
-        if (enterKey)
-        {
-            enterKey = false;
-            return true;
-        }
-        else
-        {
-            return false;
-        }
     }
 
     public void animEnd()
@@ -90,6 +73,10 @@ public class ClipboardController : MonoBehaviour {
 
     public void changeToScene(int scene)
     {
+        if (scene == -1)
+        {
+            scene = nextRoom;
+        }
         SceneManager.LoadScene(scene);
     }
 }
