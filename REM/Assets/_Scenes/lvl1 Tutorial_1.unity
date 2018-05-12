@@ -1733,7 +1733,7 @@ Prefab:
     - target: {fileID: 114237116565529708, guid: 06df4d38bdc8be24fb65065de3c1049e,
         type: 2}
       propertyPath: nextRoom
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06df4d38bdc8be24fb65065de3c1049e, type: 2}
@@ -2940,6 +2940,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 482311541}
     m_Modifications:
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4566667119031674, guid: ba8d17b7bf4b819458fafe8a694bd777, type: 2}
       propertyPath: m_LocalPosition.x
       value: 4.062
@@ -2987,6 +2992,46 @@ Prefab:
     - target: {fileID: 1167238119503174, guid: ba8d17b7bf4b819458fafe8a694bd777, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212641291530108966, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[0]
+      value: It looks like notes a nurse forgot
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[1]
+      value: 'Patient: Bob Riler'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[2]
+      value: 'Height: 6''1"'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[3]
+      value: 'Weight: 174 lbs'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[4]
+      value: 'Notes: Entered hospital 2 days ago'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[5]
+      value: Blames self for n-
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[6]
+      value: Huh. The paper's ripped, that's all that's left
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba8d17b7bf4b819458fafe8a694bd777, type: 2}
@@ -5258,7 +5303,7 @@ MonoBehaviour:
   level: 1
   bed: 0
   lever2: 0
-  end: 0
+  endIt: 0
   monster: 0
 --- !u!114 &2106585085
 MonoBehaviour:

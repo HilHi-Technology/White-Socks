@@ -3979,7 +3979,7 @@ MonoBehaviour:
   level: 2
   bed: 0
   lever2: 0
-  end: 0
+  endIt: 0
   monster: 0
 --- !u!114 &743279366
 MonoBehaviour:
@@ -7615,7 +7615,7 @@ Prefab:
     - target: {fileID: 114237116565529708, guid: 06df4d38bdc8be24fb65065de3c1049e,
         type: 2}
       propertyPath: nextRoom
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06df4d38bdc8be24fb65065de3c1049e, type: 2}
@@ -7885,6 +7885,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 326521070}
     m_Modifications:
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.size
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4566667119031674, guid: ba8d17b7bf4b819458fafe8a694bd777, type: 2}
       propertyPath: m_LocalPosition.x
       value: 3.5084333
@@ -7928,6 +7933,59 @@ Prefab:
     - target: {fileID: 1167238119503174, guid: ba8d17b7bf4b819458fafe8a694bd777, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[0]
+      value: An excerpt from a trashy romance novel?? Well, nothing else to read,
+        I suppose.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[1]
+      value: A man stands before a beast. It lashes its claws and bares its teeth.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[2]
+      value: Its distorted from brushing the walls, staining them black and ashy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[3]
+      value: It eats everything unfortunate enough to be caught in the path, but he
+        does not move from where he stands. He can't move
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[4]
+      value: A pile of rubble looms behind them. A pile of rubble from above. A pile
+        of rubble that fell on the hand he was holding.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[5]
+      value: The hand that is crying. The hand that is holding him back.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[6]
+      value: The hand that he leaves behind.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[7]
+      value: And the beast engulfs him too.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[8]
+      value: '...'
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[9]
+      value: That sounds strangely familiar
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba8d17b7bf4b819458fafe8a694bd777, type: 2}

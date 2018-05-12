@@ -19,7 +19,7 @@ public class Lever_Tut : MonoBehaviour {
         {
             if (GetComponent<Toggled_Object>().pressed > 0)
             {
-                GameObject.Find("Tutorial").GetComponent<Tutorial>().end = true;
+                GameObject.Find("Tutorial").GetComponent<Tutorial>().endIt = true;
             }
         }
 	}

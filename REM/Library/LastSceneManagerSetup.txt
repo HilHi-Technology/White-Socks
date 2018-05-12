@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/_Scenes/lvl5 Nurse Maze.unity
+- path: Assets/_Scenes/x_Challenge lvl.unity
   isLoaded: 1
   isActive: 1

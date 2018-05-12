@@ -1500,7 +1500,7 @@ Prefab:
     - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
         type: 2}
       propertyPath: messages.Array.size
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4566667119031674, guid: ba8d17b7bf4b819458fafe8a694bd777, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1547,8 +1547,30 @@ Prefab:
     - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
         type: 2}
       propertyPath: messages.Array.data[2]
-      value: Late last night, a townhouse in the southern row of the Chrysanthemum
-        Apartments...
+      value: 2 nights ago, a townhouse in the southern row of the Chrysanthemum Apartments
+        caught fire, presumably from a ciggarette butt
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[3]
+      value: Lack of regular upkeep had weakened the frames, and the fire quickly
+        spread through the building.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[4]
+      value: The building soon collapsed before being fully evacuated
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[5]
+      value: A new local hero rescued multiple kids, as well as someones flute and
+        cat. Officer Ril-
+      objectReference: {fileID: 0}
+    - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
+        type: 2}
+      propertyPath: messages.Array.data[6]
+      value: These nurses should take better care of their stuff, this is ripped too.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba8d17b7bf4b819458fafe8a694bd777, type: 2}
@@ -1989,7 +2011,7 @@ Prefab:
     - target: {fileID: 114237116565529708, guid: 06df4d38bdc8be24fb65065de3c1049e,
         type: 2}
       propertyPath: nextRoom
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06df4d38bdc8be24fb65065de3c1049e, type: 2}
