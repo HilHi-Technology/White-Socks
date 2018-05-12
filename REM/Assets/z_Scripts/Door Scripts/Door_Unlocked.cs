@@ -13,14 +13,14 @@ public class Door_Unlocked : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!Mvmt.instance.dreaming && collision.tag == "Player")
+        if (!Mvmt.instance.dreaming && (collision.tag == "Player" || collision.tag == "nurse"))
         {
             anim.SetInteger("Toggled", 1);
         }
     }
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (!Mvmt.instance.dreaming && collision.tag == "Player")
+        if (!Mvmt.instance.dreaming && (collision.tag == "Player" || collision.tag == "nurse"))
         {
             anim.SetInteger("Toggled", -1);
         }

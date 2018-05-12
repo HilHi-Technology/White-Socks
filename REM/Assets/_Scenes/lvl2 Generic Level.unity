@@ -1537,7 +1537,7 @@ Prefab:
     - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
         type: 2}
       propertyPath: messages.Array.data[0]
-      value: It looks like a newspaper
+      value: It looks like a newspaper <enter to read>
       objectReference: {fileID: 0}
     - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
         type: 2}
@@ -1548,7 +1548,7 @@ Prefab:
         type: 2}
       propertyPath: messages.Array.data[2]
       value: 2 nights ago, a townhouse in the southern row of the Chrysanthemum Apartments
-        caught fire, presumably from a ciggarette butt
+        caught fire, presumably from a cigarette butt
       objectReference: {fileID: 0}
     - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
         type: 2}
@@ -2007,6 +2007,11 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114237116565529708, guid: 06df4d38bdc8be24fb65065de3c1049e,
+        type: 2}
+      propertyPath: nextRoom
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06df4d38bdc8be24fb65065de3c1049e, type: 2}

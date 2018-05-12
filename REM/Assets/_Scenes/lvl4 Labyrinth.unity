@@ -3999,7 +3999,7 @@ Prefab:
         type: 2}
       propertyPath: messages.Array.data[0]
       value: This clipboard has a transcript of a conversation caught by a security
-        camera
+        camera <enter to read>
       objectReference: {fileID: 0}
     - target: {fileID: 114230750728996420, guid: ba8d17b7bf4b819458fafe8a694bd777,
         type: 2}
@@ -4278,7 +4278,7 @@ MonoBehaviour:
   speed: 1
   range: 1.5
   errorMargin: 0.01
-  room: {fileID: 102900000, guid: a86a459e1cbecf643920d2edff13b89e, type: 3}
+  room: 5
   coll: {fileID: 792151261}
   pathway:
   - {x: 2.3, y: 1.9, z: 0}

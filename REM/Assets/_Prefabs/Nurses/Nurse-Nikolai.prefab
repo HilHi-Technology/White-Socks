@@ -27,7 +27,7 @@ GameObject:
   - component: {fileID: 114819383116122044}
   m_Layer: 0
   m_Name: Nurse-Nikolai
-  m_TagString: Untagged
+  m_TagString: nurse
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -214,7 +214,7 @@ MonoBehaviour:
   speed: 1
   range: 1.5
   errorMargin: 0.01
-  room: {fileID: 102900000, guid: b4ab5bf6159b08a4780b0ae12867136a, type: 3}
+  room: 0
   coll: {fileID: 0}
   pathway:
   - {x: 0.4, y: 4.3, z: 0}

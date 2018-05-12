@@ -8,7 +8,7 @@ public class NurseController : MonoBehaviour {
     public float speed;
     public float range;
     public float errorMargin;
-    public Object room;
+    public int room;
     
     Vector3 target;
     GameObject player;
@@ -45,7 +45,7 @@ public class NurseController : MonoBehaviour {
         {
             if (!Mvmt.instance.dreaming)
             {
-                SceneManager.LoadScene(room.name);
+                SceneManager.LoadScene(room);
             }
             else
             {

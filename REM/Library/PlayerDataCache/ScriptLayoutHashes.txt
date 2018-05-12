@@ -86,6 +86,7 @@ c63db43c730fa2cbb8ca07de15898cb6 UnityEngine.UI.dll:UnityEngine.UI.Toggle
 f61c0793411f10cf5fbfa1473fef5ef2 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 86d36c43c53541d667100dc90b89cfba UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 1b8c02d0aa82fbf036a2b9b2d713eec3 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
+30bd56dd1c36b45c66db477162d83e69 Assembly-CSharp.dll:.Buttons
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 dbc29a6f2739d277c10da432d73adb6d UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 8144169769d51429c4aedc8b0f92d47b UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -98,7 +99,8 @@ ff05dcdf90651c3d98a9cad3df5e471e UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 31aaf521b3ef8699466676591ea0efd4 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 df374c01140c2d578bf70cbd60073d1d UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-e67f7fe07ab15720c187f7b685173112 Assembly-CSharp.dll:.NurseController
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TitleControllerScript
+b7e8921b8615dce21bac3fea75503499 Assembly-CSharp.dll:.NurseController
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -165,5 +167,3 @@ f20c932691fcfa7c608a601acf17a969 Assembly-CSharp.dll:.Bed
 a9049f8d950deeddb0aad753da49f2a1 Assembly-CSharp.dll:.Tutorial
 be302bd04416ad41feac73dedb26316a Assembly-CSharp.dll:.Door_Activator
 dfa5ca2cc13bc09b4f61af9146e14b82 Assembly-CSharp.dll:.Wall
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.TitleControllerScript
-30bd56dd1c36b45c66db477162d83e69 Assembly-CSharp.dll:.Buttons

@@ -1620,6 +1620,20 @@ Prefab:
       propertyPath: coll
       value: 
       objectReference: {fileID: 197459855}
+    - target: {fileID: 114819383116122044, guid: 46a969afac1b7e94abe276df3efe6a57,
+        type: 2}
+      propertyPath: range
+      value: 1.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114819383116122044, guid: 46a969afac1b7e94abe276df3efe6a57,
+        type: 2}
+      propertyPath: room
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1498050103164942, guid: 46a969afac1b7e94abe276df3efe6a57, type: 2}
+      propertyPath: m_TagString
+      value: nurse
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 46a969afac1b7e94abe276df3efe6a57, type: 2}
   m_IsPrefabParent: 0
@@ -2184,7 +2198,7 @@ Prefab:
     - target: {fileID: 114667916041457570, guid: a3d4cc40f5289034393f656d2b507675,
         type: 2}
       propertyPath: cheats
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114365338493375258, guid: a3d4cc40f5289034393f656d2b507675, type: 2}

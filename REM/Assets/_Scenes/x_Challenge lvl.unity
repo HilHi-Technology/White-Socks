@@ -2293,6 +2293,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114237116565529708, guid: 06df4d38bdc8be24fb65065de3c1049e,
+        type: 2}
+      propertyPath: nextRoom
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 06df4d38bdc8be24fb65065de3c1049e, type: 2}
   m_IsPrefabParent: 0
@@ -6681,9 +6686,8 @@ Prefab:
     - target: {fileID: 114819383116122044, guid: 46a969afac1b7e94abe276df3efe6a57,
         type: 2}
       propertyPath: room
-      value: 
-      objectReference: {fileID: 102900000, guid: cf28f140c39cb0941b8533a0b9e62218,
-        type: 3}
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 114819383116122044, guid: 46a969afac1b7e94abe276df3efe6a57,
         type: 2}
       propertyPath: speed

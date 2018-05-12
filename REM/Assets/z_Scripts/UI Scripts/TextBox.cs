@@ -29,7 +29,7 @@ public class TextBox : MonoBehaviour {
         image.enabled = true;
         text.text = message;
 
-        if(enter)
+        if(enter || Input.GetKeyDown(KeyCode.Backslash))
         {
             image.enabled = false;
             text.text = "";

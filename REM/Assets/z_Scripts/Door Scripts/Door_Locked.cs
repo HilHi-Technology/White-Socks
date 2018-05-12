@@ -21,7 +21,7 @@ public class Door_Locked : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!Mvmt.instance.dreaming && collision.tag == "Player")
+        if (!Mvmt.instance.dreaming && (collision.tag == "Player" || collision.tag == "nurse"))
         {
             anim.SetInteger("Toggled", 1);
             anim.SetTrigger("Hit");
@@ -29,7 +29,7 @@ public class Door_Locked : MonoBehaviour {
     }
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (!Mvmt.instance.dreaming && collision.tag == "Player")
+        if (!Mvmt.instance.dreaming && (collision.tag == "Player" || collision.tag == "nurse"))
         {
             anim.SetInteger("Toggled", -1);
         }

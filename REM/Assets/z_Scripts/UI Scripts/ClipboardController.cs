@@ -13,6 +13,7 @@ public class ClipboardController : MonoBehaviour {
     public Text clipboardText;
     public static ClipboardController instance;
     bool enterKey;
+    bool escapeKey;
     public bool play = false;
     bool animStarted = false;
     public bool animEnded = false;
@@ -30,7 +31,8 @@ public class ClipboardController : MonoBehaviour {
 
 	void Update ()
     {
-        enterKey = (Input.GetKeyDown(KeyCode.Return));
+        enterKey = Input.GetKeyDown(KeyCode.Return);
+        if (Input.GetKeyDown(KeyCode.Escape)) { escapeKey = true; }
 
         if (play)
         {
@@ -38,6 +40,15 @@ public class ClipboardController : MonoBehaviour {
             {
                 turnOn = true;
                 print("Level completed!");
+            }
+        }
+
+        if (escapeKey)
+        {
+            bool end = ExitLevel();
+            if (end)
+            {
+                changeToScene(0);
             }
         }
 	}
@@ -64,6 +75,24 @@ public class ClipboardController : MonoBehaviour {
     private void print(string message)
     {
         clipboardText.text = message;
+    }
+
+    private bool ExitLevel()
+    {
+        TextBox.instance.print("Press 'enter' to return to main menu\npress '\\' to cancel");
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            return true;
+        }
+        if (Input.GetKeyDown(KeyCode.Backslash))
+        {
+            enterKey = false;
+            return false;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     public void animEnd()

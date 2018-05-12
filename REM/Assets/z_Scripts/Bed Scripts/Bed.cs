@@ -22,11 +22,17 @@ public class Bed : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        touching = true;
+        if (other.name == "Bob (Player)")
+        {
+            touching = true;
+        }
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        touching = false;
+        if (other.name == "Bob (Player)")
+        {
+            touching = false;
+        }
     }
 
     void Update ()
