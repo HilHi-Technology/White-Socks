@@ -79,15 +79,10 @@ public class ClipboardController : MonoBehaviour {
 
     private bool ExitLevel()
     {
-        TextBox.instance.print("Press 'enter' to return to main menu\npress '\\' to cancel");
+        TextBox.instance.print("Press 'enter' to return to main menu");
         if (Input.GetKeyDown(KeyCode.Return))
         {
             return true;
-        }
-        if (Input.GetKeyDown(KeyCode.Backslash))
-        {
-            enterKey = false;
-            return false;
         }
         else
         {
